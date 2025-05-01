@@ -1,13 +1,10 @@
-<section>
-
-    <div class="main-container">
-
-        <div class="main-container-rotate">
-
+<section class="white-font">
+    <div class="main-container absolute">
+        <div class="main-container-rotate display-flex">
             <div class="text-container">
-                <p>CONTACT ME</p>
-                <h1>Ready to work together?</h1>
-                <span>
+                <p class="font-size-20 weight-500">CONTACT ME</p>
+                <h1 class="font-size-64 weight-700">Ready to work together?</h1>
+                <span class="font-size-18 weight-400">
                     Encourage people to contact you and describe what role you are interested in.
                     Express confidence in your ability to make a meaningful contribution to a team
                     through your expertise and enthusiasm for improving your skills.
@@ -17,49 +14,43 @@
                 <div class="arrow-container">
                     <img src="assets/ready_to_work_img/yellow_arrwo.svg">
                 </div>
-            </div>
-    
-            <form class="form-container">
-    
-                <p>What's yout name?</p>
-                <input class="input-info" placeholder="Your name goes here" type="text">
+            </div> 
+            <form class="form-container display-flex column"> 
+
+                <p class="font-size-24 weight-500">What's yout name?</p>
+                <input class="input-info white-font font-size-18" placeholder="Your name goes here" type="text">
                 <div class="yellow-line"></div>
 
-                <p>Whats your email?</p>
-                <input class="input-info" placeholder="youremain@email.com" type="text">
+                <p class="font-size-24 weight-500">Whats your email?</p>
+                <input class="input-info white-font font-size-18" placeholder="youremain@email.com" type="text">
                 <div class="yellow-line"></div>
 
-                <p>How can i help you?</p>
-                <input class="input-info" placeholder="Hello Davor, I am interested in..." type="text">
+                <p class="font-size-24 weight-500">How can i help you?</p>
+                <input class="input-info white-font font-size-18" placeholder="Hello Davor, I am interested in..." type="text">
                 <div class="yellow-line"></div>
 
-                <div class="agreement-container">
-                    <div class="disply-flex">
-                        <input class="checkbox" type="checkbox">
+                <div class="agreement-container display-flex column">
+                    <div class="disply-flex display-flex">
+                        <input class="checkbox pointer" type="checkbox">
                         <div>
-                            <span>
+                            <span class="weight-400">
                                 I've read the <a href="">privacy policy</a> 
                                 and agree to the processing of my data as outlined.
                             </span>
                         </div>
                     </div>
                     <div>
-                        <div class="sent-button">
-                            <a>Send</a>
+                        <div class="sent-button flex-justyfy-align">
+                            <a class="font-size-18 weight-500 pointer">Send</a>
                         </div>
                     </div>
-                </div>
-                    
-            </form>
-    
+                </div>                   
+            </form>   
         </div>
-
     </div>
-
-    <div class="footer-position">
-        <div class="footer-container">
+    <div class="footer-position absolute">
+        <div class="footer-container flex-justyfy-align">
             <app-footer></app-footer>
         </div>
     </div>
-
 </section>

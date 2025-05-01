@@ -6,11 +6,10 @@ section {
     height: 100vh;
     width: 100%;
     transform: rotate(180deg);
-    color: white;
+    font-family: 'Poppins';
 }
 
 .main-container {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -18,7 +17,6 @@ section {
 }
 
 .main-container-rotate {
-    display: flex;
     justify-content: space-around;
     align-items: center;
     transform: rotate(180deg);
@@ -28,14 +26,10 @@ section {
     width: 560px;
     height: 460px;
     p {
-        font-size: 20px;
+        margin: 0px;
     }
     h1 {
-        font-size: 64px;
-        margin: 16px 0px 16px 0px;
-    }
-    span {
-        font-size: 18px;
+        margin: 0px;
     }
 }
 
@@ -47,35 +41,29 @@ section {
 }
 
 .form-container {
+    justify-content: center;
     width: 480px;
     height: 560px;
     p {
-        font-size: 24px;
-    }
-    span {
-        font-size: 15px;
+        margin: 0px;
     }
 }
 
 .input-info {
+    background: transparent;
     width: 100%;
     height: 22px;
-    background: transparent;
-    font-size: 18px;
     border: 0px;
-    color: white;
 }
 
 .yellow-line {
     width: 100%;
     height: 1.7px;
+    margin: 8px 0px 8px 0px;
     background-color: rgb(246, 196, 24);
-    margin: 16px 0px 16px 0px;
 }
 
 .agreement-container {
-    display: flex;
-    flex-direction: column;
     margin-top: 16px;
     width: 100%;
     span {
@@ -88,18 +76,16 @@ section {
     }
 }
 
-.disply-flex {
-    display: flex;
+.disply-margin {
     margin-top: 16px;
 }
 
 .checkbox {
-    width: 18px;
+    width: 22px;
     height: 18px;
     margin: 8px;
     appearance: none; 
     background: transparent;
-    cursor: pointer;
     border: 2px solid rgb(38, 55, 140);
     position: relative; 
     &:checked::after {
@@ -119,7 +105,6 @@ section {
 }
 
 .sent-button {
-    display: flex;
     float: right;
     margin-top: 32px;
     color: rgb(125, 125, 125);
@@ -127,26 +112,17 @@ section {
     border-width: 1px 3px 3px 1px;
     width: 132px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 32px;
-    float: right;
-    cursor: pointer;
     a {
         color: rgb(125, 125, 125);
-        font-size: 18px;
     }
 }
 
 .footer-position {
-    position: absolute;
     width: 100%;
     top: 32px;
 }
 
 .footer-container {
     transform: rotate(180deg);
-    display: flex;
-    justify-content: center;
 }

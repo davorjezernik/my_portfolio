@@ -1,16 +1,13 @@
 section {
     height: 100vh;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Poppins';
 }
-
 
 .img-txt {
     width: 560px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
     position: relative;
 }
 
@@ -48,48 +45,25 @@ section {
 .yellow-paper,
 .blue-paper,
 .orange-paper {
-    position: absolute;
     width: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     img {
         height: 40px;
         width: 40px;
         margin: 16px;
-      }
-
-      p {
-        color: white;
-        font-size: 24px;
-        margin: 0;
-      }
+    }
 }
 
 .about-me-txt {
     width: 560px;
-    height: 432px;
-    h2 {
-        font-size: 64px;
-        margin: 0px;
-    }
-    p {
-        font-size: 20px;
-    }
     a {
-        font-size: 20px;
         border: 1px solid rgb(0, 0, 0);
         border-width: 1px 3px 3px 1px;
         width: 132px;
         height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-radius: 32px;
         float: right;
-        cursor: pointer;
     }
 }
 
