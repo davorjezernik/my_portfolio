@@ -1,25 +1,27 @@
 section {
     height: 100vh;
     font-family: 'Poppins';
+    h2 {
+        margin: 0px;
+        line-height: 1.16;
+    }
 }
 
 .container-one {
     width: 90%;
-    height: 208px;
-}
-
-.right {
-    float: right;
+    height: 136px;
+    align-items: flex-end;
 }
 
 .text-img {
-    width: 280px;
     height: 40px;
     align-items: center;
-    float: right;
     img {
         width: 100px;
         height: 36px;
+    }
+    p {
+        margin: 0px;
     }
 }
 

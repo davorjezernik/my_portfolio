@@ -18,10 +18,13 @@ section {
 }
 
 .text-container {
+    width: 261px;
     height: 144px;
     margin-bottom: 64px;
     p {
-        margin-left: 176px;
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
     }
     h1 {
         margin: 0px;
