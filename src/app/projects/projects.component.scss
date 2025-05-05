@@ -1,0 +1,53 @@
+section {
+    font-family: 'Poppins';
+    height: 100vh;
+}
+
+.section-space {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-container {
+    width: 560px;
+    height: 240px;
+    h2 {
+        margin: 0px;
+        line-height: 1.16;
+    }
+}
+
+.text-img {
+    width: 260px;
+}
+
+.join-container {
+    width: 560px;
+    img {
+        width: 560px;
+    } 
+    h3 {
+        margin: 0px;
+    }
+}
+
+.img-height {
+    height: 400px;
+}
+
+.section-two {
+    img {
+        border-radius: 25px;
+    } 
+    h3 {
+        margin: 0px;
+    }
+}
+
+.pollo-container {
+    width: 560px;
+}
+
+.bubble-containe {
+    width: 560px;
+}

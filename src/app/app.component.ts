@@ -10,7 +10,7 @@ import { ReadyToWorkComponent } from './ready-to-work/ready-to-work.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeadlineComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, ThoughtsComponent, ReadyToWorkComponent],
+  imports: [RouterOutlet ,HeadlineComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, ThoughtsComponent, ReadyToWorkComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
