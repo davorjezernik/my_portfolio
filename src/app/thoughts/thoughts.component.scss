@@ -13,15 +13,84 @@ section {
     align-items: flex-end;
 }
 
+.card-one,
+.card-two-container,
+.card-three-container {
+  transition: z-index 0s, transform 0.3s ease;
+}
+
+.img-hover {
+    position: absolute;
+    opacity: 0;
+    z-index: 1; 
+    transition: opacity 0.3s ease; 
+}
+
+.card-one:hover .img-hover,
+.card-two-container:hover .img-hover,
+.card-three-container:hover .img-hover {
+    opacity: 0.6;
+    z-index: 2; 
+}
+
+.hover-img-txt {
+    position: relative;
+    z-index: 3; 
+}
+
+.hover-img-txt:hover {
+    color: rgb(248, 249, 250);
+    filter: brightness(0) invert(1); 
+}
+
+.hover-effect:hover {
+    z-index: 3; 
+}
+
+.hover-effect:hover p,
+.hover-effect:hover h4 {
+    color: rgb(248, 249, 250); 
+}
+
 .text-img {
     height: 40px;
     align-items: center;
-    img {
-        width: 100px;
-        height: 36px;
+    display: flex; 
+    overflow: hidden; 
+}
+
+.text-img img {
+    width: 100px;
+    height: 36px;
+    opacity: 0; 
+    clip-path: inset(0 100% 0 0); 
+    animation: drawAndHide 2s infinite; 
+}
+
+.text-img p {
+    margin: 0px;
+}
+
+@keyframes drawAndHide {
+    0% {
+        clip-path: inset(0 0 0 100%); 
+        opacity: 0; 
     }
-    p {
-        margin: 0px;
+    25% {
+        clip-path: inset(0 0% 0 0); 
+        opacity: 1; 
+    }
+    50% {
+        clip-path: inset(0 0% 0 0); 
+        opacity: 1; 
+    }
+    75% {
+        clip-path: inset(0 0% 0 100%); 
+        opacity: 0; 
+    }
+    100% {
+        clip-path: inset(0 100% 0 0); 
+        opacity: 0; 
     }
 }
 
@@ -39,7 +108,7 @@ section {
 }
 
 .card-two-container {
-    z-index: 1;
+    z-index: 2;
     left: 120px;
     transform: rotate(-4deg);
     margin-bottom: 96px;
@@ -52,7 +121,7 @@ section {
 }
 
 .card-three-container {
-    z-index: -1;
+    z-index: 0;
     right: 120px;
     transform: rotate(4deg);
     margin-bottom: 96px;

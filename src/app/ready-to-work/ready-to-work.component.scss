@@ -34,11 +34,36 @@ section {
     }
 }
 
-.arrow-container {
-    width: 100%;
-    img {
-        float: right;
-    }
+.arrow-container img {
+    width: 280x;
+    height: 44px;
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    animation: drawAndHide 4s ease-in-out infinite;
+    float: right;
+}
+
+@keyframes drawAndHide {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  25% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+  }
+  50% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+  }
+  75% {
+    clip-path: inset(0 0% 0 100%);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
 }
 
 .form-container {
@@ -48,6 +73,10 @@ section {
     p {
         margin: 0px;
     }
+}
+
+.hover-form:hover {
+    color: rgb(248, 122, 85);
 }
 
 .input-info {
@@ -62,6 +91,10 @@ section {
     height: 1.7px;
     margin: 8px 0px 8px 0px;
     background-color: rgb(246, 196, 24);
+}
+
+.hover-form:hover .yellow-line {
+    background-color: rgb(51, 85, 255);
 }
 
 .agreement-container {

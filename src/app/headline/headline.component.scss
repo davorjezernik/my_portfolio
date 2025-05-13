@@ -7,12 +7,15 @@ section {
     width: 100%;
     font-family: 'Poppins';
     p {
+        margin: 0px;
         width: 128px;
         padding: 8px;
         border-radius: 32px;
     }
     h1 {
         font-size: 128px;
+        line-height: 1;
+        margin: 16px 0px 16px 0px;
     }
     a {
         text-decoration: none;
@@ -25,84 +28,166 @@ section {
 }
 
 .navbar-container {
-    width: 100%;
+  width: 100%;
 }
 
 .headline-container {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.hover-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 296px;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+  
+.hover-img {
+  height: 40px;
+  opacity: 0;
+  position: absolute;
+}
+  
+.hover-text:hover + .img-container .hover-img {
+  opacity: 1;
+  animation: roll-across 1s ease forwards;
+}
+
+@keyframes roll-across {
+  0% {
+    transform: translateX(128px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(232px) rotate(360deg);
+  }
+}
+
+.hover-text {
+  position: relative;
+  width: 128px;
+  height: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 1;
+  border: 1px solid white;
+  white-space: nowrap; 
+}
+  
+.hover-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(51, 85, 255);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+  
+.hover-text::after {
+  content: "Hello world";
+  position: relative;
+  z-index: 1;
+  transition: content 0s linear 0.4s, text-indent 0.4s ease;
+  white-space: nowrap; 
+}
+  
+.hover-text:hover {
+  width: 256px;
+}
+  
+.hover-text:hover::before {
+  transform: translateY(0);
+}
+  
+.hover-text:hover::after {
+  content: "I'M DAVOR JEZERNIK";
+}
+  
+.width-600 {
+  width: 600px;
+} 
+
 .hover-lowercase {
-    text-transform: uppercase;
-    color: rgb(248, 249, 250);
-    transition: color 0.4s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  color: rgb(248, 249, 250);
+  transition: color 0.4s ease, transform 0.3s ease;
 }
   
 .hover-lowercase:hover {
-    text-transform: lowercase;
-    color: rgb(247, 197, 24);
+  text-transform: lowercase;
+  color: rgb(247, 197, 24);
 }
 
 .hover-uppercase {
-    text-transform: lowercase;
-    color: rgb(248, 249, 250);
-    transition: color 0.4s ease, transform 0.3s ease;
+  text-transform: lowercase;
+  color: rgb(248, 249, 250);
+  transition: color 0.4s ease, transform 0.3s ease;
 }
 
 .hover-uppercase:hover {
-    text-transform: uppercase;
-    color: rgb(247, 197, 24);
+  text-transform: uppercase;
+  color: rgb(247, 197, 24);
 }
 
 .my-photo {
-    height: 244px;
-    width: 200px;
-    margin-left: 64px;
-    object-fit: cover;
-    transform: rotate(8deg);
+  height: 216px;
+  width: 180px;
+  margin-left: 64px;
+  object-fit: cover;
+  transform: rotate(8deg);
 }
 
 .right {
-    justify-content: end;
+  justify-content: end;
+}
+
+.height-48 {
+  height: 48px;
 }
 
 .a-hover:hover {
-    border-width: 1px;
-    background-color: rgb(248, 122, 85);
-    transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  border-width: 1px;
+  background-color: rgb(248, 122, 85);
+  transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .link-container {
-    width: 36px;
-    margin-left: 72px;
-    gap: 4px;
-    bottom: 96px;
-    img {
-        border-radius: 100%;
-        padding: 4px;
-    }
+  width: 36px;
+  margin-left: 72px;
+  gap: 4px;
+  bottom: 96px;
+  img {
+    border-radius: 100%;
+    padding: 4px;
+  }
 }
   
 .social-link:hover {
-    background-position: top;
-    background: linear-gradient(to top, rgb(51, 85, 255) 50%, transparent 50%);
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;   
-    background-size: 100% 200%;
-    background-position: bottom;
-    transition: background-position 0.4s ease-out;
-  }
-  
-  
-  
-  
-
-
-
-
-
-
-  
+  background-position: top;
+  background: linear-gradient(to top, rgb(51, 85, 255) 50%, transparent 50%);
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;   
+  background-size: 100% 200%;
+  background-position: bottom;
+  transition: background-position 0.4s ease-out;
+}  

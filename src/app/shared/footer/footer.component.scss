@@ -1,15 +1,112 @@
 footer {
-    width: 1200px;
-    height: 132px;
-    img {
-        width: 40px;
-        height: 40px;
-    }
-    a {
-        text-decoration: none;
-    }
+  width: 1200px;
+  height: 132px;
+  display: flex;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.container-one {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hyperling-container {
-    justify-content: space-between;
+  justify-content: space-between;  
+  width: 1000px;
+}
+
+.container-two {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-left: 200px;
+}
+
+.line-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-container img {
+  width: 128px;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transition: opacity 0.5s ease, clip-path 0.5s ease;
+  pointer-events: none;
+}
+
+.line-container:hover img {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+}
+
+.hover-line {
+    position: absolute;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+}
+
+.link-container img {
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  transform: translateX(0) rotate(0deg);
+  transition: opacity 0.3s ease, transform 0.6s ease;
+}
+
+.link-container a:hover + div img.move-1 {
+  opacity: 1;
+  animation: spin-slide-left-1 0.6s ease forwards;
+}
+
+.link-container a:hover + div img.move-2 {
+  opacity: 1;
+  animation: spin-slide-left-2 0.6s ease forwards;
+}
+
+.link-container a:hover + div img.move-3 {
+  opacity: 1;
+  animation: spin-slide-left-3 0.6s ease forwards;
+}
+
+.link-container a:hover + div img.move-1 {
+  opacity: 1;
+  transform: translateX(32px) rotate(360deg);
+}
+
+.link-container a:hover + div img.move-2 {
+  opacity: 1;
+  transform: translateX(40px) rotate(360deg);
+}
+
+.link-container a:hover + div img.move-3 {
+  opacity: 1;
+  transform: translateX(24px) rotate(360deg);
+}
+
+.hover-txt {
+  padding: 8px 16px;
+  border-radius: 32px;
+  background-image: linear-gradient(to top, rgb(51, 85, 255), rgb(51, 85, 255));
+  background-size: 100% 0%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: background-size 0.3s ease;
+  color: white;
+}
+
+.hover-txt:hover {
+    background-size: 100% 100%;
 }
