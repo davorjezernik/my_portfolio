@@ -13,19 +13,17 @@ export class ProjectsComponent {
 
   IdTemplate: string = '';
 
-  checkID(event: Event) {
-    const target = event.target as HTMLElement;
-    this.IdTemplate = target.id;
-    console.log(this.IdTemplate);
-  }
-
-  sendTemplateInfo() {
-    if (this.IdTemplate == 'join') {
-      console.log('join template');
-    } else if ( this.IdTemplate == 'pollo') {
-      console.log('pollo template');
+  checkID(element: HTMLElement) {
+    this.IdTemplate = element.id;
+    if (this.IdTemplate === 'join') {
+      console.log('Use template', this.IdTemplate);
+    } else if (this.IdTemplate === 'pollo') {
+      console.log('Use template', this.IdTemplate)
     } else {
-      console.log('bubble template');
+      console.log('Use template', this.IdTemplate)
     }
   }
+
+
+
 }
