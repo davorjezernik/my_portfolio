@@ -10,7 +10,8 @@
     <div class="join-container">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/upper_part/join_laptop.svg" alt="Join App Preview">
-            <a #templateRefJoin class="hover-link a-hover" href="#" id="join" (click)="checkID(templateRefJoin)">Project details</a>
+            <a #templateRefJoin class="hover-link a-hover" href="project-view-route" id="join" (click)="checkID(templateRefJoin)">Project details</a>
+            <app-project-view class="hide" [templateID]="templateID"></app-project-view>      
         </div>
         <h3 class="font-size-24 weight-700">Join</h3>
         <p class="font-size-18 weight-400">
@@ -25,7 +26,8 @@
     <div class="pollo-container">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/lower_part/pollo.svg">
-            <a #templateRefPollo class="hover-link a-hover" href="#" id="pollo" (click)="checkID(templateRefPollo)">Project details</a>
+            <a #templateRefPollo class="hover-link a-hover" href="project-view-route" id="pollo" (click)="checkID(templateRefPollo)">Project details</a>
+            <app-project-view class="hide" [templateID]="templateID"></app-project-view>
         </div>
         <h3 class="font-size-24 weight-700">El Pollo Loco</h3>
         <p class="font-size-18 weight-400">
@@ -36,7 +38,8 @@
     <div class="bubble-containe">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/lower_part/dabubble.svg">
-            <a #templateRefBubble class="hover-link a-hover" href="#" id="bubble" (click)="checkID(templateRefBubble)">Project details</a>
+            <a #templateRefBubble class="hover-link a-hover" href="project-view-route" id="bubble" (click)="checkID(templateRefBubble)">Project details</a>
+            <app-project-view class="hide" [templateID]="templateID"></app-project-view>
         </div>
         <h3 class="font-size-24 weight-700">DABubble</h3>
         <p class="font-size-18 weight-400">
