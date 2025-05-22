@@ -13,14 +13,19 @@ export class ProjectViewComponent implements OnChanges {
   @Input() templateID: string = '';
 
   project: TemplateItem[] = templateLayout;
+  selectedProject: TemplateItem | undefined;
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (
-      changes['templateID'] &&
-      changes['templateID'].currentValue !== changes['templateID'].previousValue &&
-      this.templateID
-    ) {
-      console.log('Template to use:', this.templateID);
+  if (
+    changes['templateID'] &&
+    changes['templateID'].currentValue !== changes['templateID'].previousValue &&
+    this.templateID
+  ) {
+    this.selectedProject = this.project.find(project => project.id === this.templateID);
+    if (this.selectedProject) {
+      console.log('Name',this.selectedProject.name)
+    }
     }
   }
+
 }

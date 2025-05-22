@@ -12,7 +12,8 @@ import { ProjectViewComponent } from './project-view/project-view.component';
 export class ProjectsComponent {
   templateID: string = '';
 
-  checkID(element: HTMLElement) {
-    this.templateID = element.id;
-  }
+  checkID(id: string) {
+  this.templateID = id;
+  console.log('Id =', id);
+}
 }
