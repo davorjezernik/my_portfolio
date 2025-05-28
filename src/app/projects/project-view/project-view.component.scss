@@ -6,6 +6,7 @@ section {
     background-position: 50% 50%;
     height: 100vh;
     width: 100%;
+    font-family: 'Poppins';
 }
 
 .content-containe {
@@ -13,7 +14,28 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 32px;
 }
+
+.back-hover {
+    text-decoration: none;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    height: 24px;
+    margin-bottom: 32px;
+    &:hover .back-hover {
+        color: rgb(247, 127, 92); 
+    }
+    .back-hover {
+        transition: color 0.2s ease, filter 0.2s ease;
+    }
+}
+
+
 
 :host ::ng-deep app-navbar nav {
     width: 100% !important;
@@ -36,6 +58,107 @@ section {
 .main-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1300px;
+    h1 {
+        margin: 0px;
+        line-height: 1.1;
+    }
+    p {
+        margin: 0px;
+    }
+}
+
+.headline-img .text-wrapper {
+    display: inline-block; 
+    position: relative; 
+        img {
+        clip-path: inset(0 100% 0 0);  
+        opacity: 0;  
+        animation: drawAndHide 10s infinite;  
+        } 
+        @keyframes drawAndHide {
+        0%, 100% {
+            clip-path: inset(0 100% 0 0);  
+            opacity: 0;  
+        }
+        25%, 75% {
+            clip-path: inset(0 0 0 0);  
+            opacity: 1;  
+        }
+        50% {
+            clip-path: inset(0 0 0 0);  
+            opacity: 1;  
+        }
+        }
+}
+
+.headline-img img {
+  width: 100%; 
+  display: block; 
+}
+
+.margin-16 {
+    margin: 16px 0px 16px 0px;
+}
+
+.skill-setup {
+    height: 24px;
+    gap: 8px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.button-img-container {
+    height: 490px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    height: 48px;
+    margin-top: 32px;
+}
+
+.button-container-inner {
+    display: flex;
+    width: 128px;
+}
+
+.img-project {
+    width: 500px;
+    border-radius: 32px;
+}
+
+.hover-link {
+    width: 128px;
+    padding: 8px 16px 8px 16px;;
+    text-align: center;
+    color: rgb(248, 249, 250);
+    text-decoration: none;
+    border: solid rgb(248, 249, 250);
+    border-width: 1px 4px 4px 1px;
+    border-radius: 32px;
+}
+
+.a-hover:hover {
+  border-width: 1px;
+  background-color: rgb(248, 122, 85);
+  transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.go-next {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    height: 24px;
+    &:hover .next-hover {
+    color: rgb(246, 196, 24); 
+    }
+    .next-hover {
+        transition: color 0.2s ease, filter 0.2s ease;
+    }
 }

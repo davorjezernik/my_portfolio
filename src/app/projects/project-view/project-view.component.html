@@ -4,51 +4,79 @@
     
     <div class="content-containe">
 
-        <div>
-            <p>Go Back</p>
+        <div class="go-back">
+            <a class="display-flex" href="#projects">
+                <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
+            </a>          
+            <a class="font-size-18 weight-700 black-font pointer back-hover" href="#projects">Go Back</a>
         </div>
 
         <div>
             <div class="main-container display-flex">
             <div>
                 <div>
-                    <div >
-                        <h1>{{ selectedProject?.name }}</h1>
-                        <img src="" >
+                    <div class="headline-img">
+                        <div class="text-wrapper">
+                            <h1 class="font-size-64 weight-700">{{ selectedProject?.name }}</h1>
+                            <img src="assets/about_me_img/blue_line.svg">
+                        </div>
                     </div>
                     <div>
-                        <p>Description</p>
-                        <span>
-                            text
+                        <p class="font-size-24 weight-700">Description</p>
+                        <span class="font-size-18 weight-400">
+                            {{ selectedProject?.description }}
                         </span>
                     </div>
                 </div>
                 <div>
-                    <p>Implementation Details</p>
-                    <span>
-                        text
+                    <p class="font-size-24 weight-700">Implementation Details</p>
+                    <span class="font-size-18 weight-400">
+                        {{ selectedProject?.details }}
                     </span>
                 </div>
                 <div>
-                    <p>Duration:<span>weeks</span></p>
-                    <div>
-                        <p>Stack</p>
+                    <div class="margin-16">
+                        <p class="font-size-18 weight-700">Duration:<span class="font-size-18 weight-400">{{ selectedProject?.weeks }}</span></p>
+                    </div>
+                    <div class="skill-setup">
+                         <p class="flex-justyfy-align" *ngFor="let skill of skills">
+                            <img [src]="skill.icon" [alt]="skill.label + ' icon'" width="20" height="20" *ngIf="skill.icon" />
+                            {{ skill.label }}
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div>
-                <img src="">
-                <div>
-                    <a href="">Github</a>
-                    <a href="">Live Test</a>
+            <div class="button-img-container">
+                <img class="img-project" src="assets/project_view_img/{{ selectedProject?.id }}.svg">
+                    
+                <div class="button-container" *ngIf="selectedProject as project">
+
+                    <div class="button-container-inner" *ngIf="project.githubUrl">
+                        <a class="font-size-18 weight-500 hover-link a-hover"
+                        [href]="project.githubUrl"
+                        target="_blank"
+                        rel="noopener noreferrer">Github</a>
+                    </div>
+
+                    <div class="button-container-inner" *ngIf="project.liveUrl">
+                        <a class="font-size-18 weight-500 hover-link a-hover"
+                        [href]="project.liveUrl"
+                        target="_blank"
+                        rel="noopener noreferrer">Live Test</a>
+                    </div>
+
                 </div>
+                    
             </div>
         </div>
         </div>
 
-        <div>
-            <p>Next Project</p>
+        <div class="go-next">
+            <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">Next Project</a>
+            <a class="display-flex" (click)="goToNextProject()">
+                <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
+            </a>
         </div>
 
     </div>

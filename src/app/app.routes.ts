@@ -4,5 +4,5 @@ import { ProjectViewComponent } from './projects/project-view/project-view.compo
 
 export const routes: Routes = [
     { path: '', component: MainContentComponent },
-    { path: 'project-view-route', component: ProjectViewComponent }
+    { path: 'project-view/:templateID', component: ProjectViewComponent }
 ];

@@ -3,14 +3,14 @@
         <b class="font-size-20 weight-500">MY CRAFT</b>
         <div class="text-img">
             <h2 class="font-size-64 weight-700">Projects</h2>
-            <img src="assets/project_view_img/upper_part/yellow_line.svg">
+            <img src="assets/project_view_img/yellow_line.svg">
         </div>
         <p class="font-size-18 weight-400">Text</p>
     </div>
     <div class="join-container">
         <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/upper_part/join_laptop.svg" alt="Join App Preview">
-            <a #templateRefJoin class="hover-link a-hover" href="project-view-route" id="join" (click)="checkID('join')">Project details</a>     
+            <img class="img-height pointer" src="assets/project_view_img/join_laptop.svg" alt="Join App Preview">
+            <a #templateRefJoin class="hover-link a-hover" [routerLink]="['/project-view', 'join']" id="join">Project details</a>     
         </div>
         <h3 class="font-size-24 weight-700">Join</h3>
         <p class="font-size-18 weight-400">
@@ -24,8 +24,8 @@
 <section class="section-space section-two display-flex">
     <div class="pollo-container">
         <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/lower_part/pollo.svg">
-            <a #templateRefPollo class="hover-link a-hover" href="project-view-route" id="pollo" (click)="checkID('pollo')">Project details</a>
+            <img class="img-height pointer" src="assets/project_view_img/pollo.svg">
+            <a #templateRefPollo class="hover-link a-hover" [routerLink]="['/project-view', 'pollo']"  id="pollo">Project details</a>
         </div>
         <h3 class="font-size-24 weight-700">El Pollo Loco</h3>
         <p class="font-size-18 weight-400">
@@ -35,8 +35,8 @@
     </div>
     <div class="bubble-containe">
         <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/lower_part/dabubble.svg">
-            <a #templateRefBubble class="hover-link a-hover" href="project-view-route" id="bubble" (click)="checkID('bubble')">Project details</a>
+            <img class="img-height pointer" src="assets/project_view_img/bubble.svg">
+            <a #templateRefBubble class="hover-link a-hover" [routerLink]="['/project-view', 'bubble']" id="bubble">Project details</a>
         </div>
         <h3 class="font-size-24 weight-700">DABubble</h3>
         <p class="font-size-18 weight-400">
@@ -45,5 +45,4 @@
     </div>
 </section>
 
-<app-project-view class="hide" [templateID]="templateID"></app-project-view> 
 

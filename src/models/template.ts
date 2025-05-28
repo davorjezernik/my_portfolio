@@ -4,8 +4,8 @@ export interface TemplateItem {
     description: string;
     details: string;
     weeks: string;
-    stack: string;
-    imgDisplay: string[];
+    githubUrl: string;
+    liveUrl: string;
 }
 
 export const templateLayout: TemplateItem[] = [
@@ -15,8 +15,8 @@ export const templateLayout: TemplateItem[] = [
         description: 'Task manager inspired by the Kanban System...',
         details: 'Short text that describes your role...',
         weeks: '8 weeks',
-        stack: 'HTML; CSS, JavaScript, FireBase',
-        imgDisplay: []
+        githubUrl: 'https://github.com/davorjezernik',
+        liveUrl: 'https://github.com/davorjezernik'
     },
     {
         id: 'pollo',
@@ -24,16 +24,16 @@ export const templateLayout: TemplateItem[] = [
         description: 'Jump, run and throw game...',
         details: 'Short text that describes your role...',
         weeks: '5 weeks',
-        stack: 'HTML, CSS, JavaScript',
-        imgDisplay: []
+        githubUrl: 'https://github.com/davorjezernik/elPolloLoco',
+        liveUrl: 'https://github.com/davorjezernik'
     },
     {
         id: 'bubble',
         name: 'DABubble',
         description: 'This App is a Slack Clone App...',
-        details: 'Work in progress',
+        details: 'Work in progress...',
         weeks: 'N/A',
-        stack: 'N/A',
-        imgDisplay: []
+        githubUrl: 'https://github.com/davorjezernik',
+        liveUrl: 'https://github.com/davorjezernik'
     }
 ];
