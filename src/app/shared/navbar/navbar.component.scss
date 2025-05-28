@@ -110,10 +110,13 @@ nav {
   width: 32px;
   height: 8px;
   border-radius: 5px;
-  margin: 0px 8px 0px 8px;
+  margin: 0 8px;
   background: rgb(248, 122, 85);
   outline: 1px solid rgb(248, 249, 250);
-  cursor: pointer;
+  
+  /* Disable mouse interaction but keep cursor pointer for consistency */
+  pointer-events: none;
+  cursor: default;
 }
 
 .slider::-webkit-slider-thumb {
@@ -121,25 +124,32 @@ nav {
   appearance: none;
   width: 16px;
   height: 16px;
-  background: rgb(51,85,255);
+  background: rgb(51, 85, 255);
   border: 1px solid rgb(248, 249, 250);
   border-radius: 50%;
-  cursor: pointer;
+  
+  /* Disable pointer events on thumb so user can't drag it */
+  pointer-events: none;
+  
   position: relative;
   z-index: 1;
+  cursor: default; /* show default cursor */
 }
-  
+
 .slider::-moz-range-thumb {
   width: 16px;
   height: 16px;
-  background: rgb(51,85,255);
+  background: rgb(51, 85, 255);
   border: 1px solid rgb(248, 249, 250);
   border-radius: 50%;
-  cursor: pointer;
+  
+  pointer-events: none;
+  
+  cursor: default;
 }
 
 .slider::-moz-range-track {
   background: rgb(248, 122, 85);
   height: 8px;
   border-radius: 5px;
-} 
+}
