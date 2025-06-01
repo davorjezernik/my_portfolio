@@ -1,0 +1,25 @@
+{
+    "TRANSLATE": {
+        "NAV_ABOUT_ME": "About me",
+        "NAV_SKILLS": "Skills",
+        "NAV_PROJECTS": "Projects",
+        "NAV_CONTACT": "Contact",
+
+        "HEAD_HELLO": "Hello world",
+        "HEAD_NAME": "I'M DAVOR JEZERNIK",
+        "HEAD_CONTACT": "Get in Touch",
+
+        "ABOUT_BASED":"Based in Graz",
+        "ABOUT_RELOCATE":"Open to relocate",
+        "ABOUT_REMOTE":"Open to work remote",
+        "ABOUT_WHO":"WHO'S DAVOR?",
+        "ABOUT_HEAD":"About Me",
+        "ABOUT_TEXT":"Hey, I'm Davor. I've always been into tech and software development because I find it exciting how fast everything is evolving. The possibilities we have today and what's coming in the future really inspire me. I enjoy thinking up new ideas and turning them into something real that can actually help people. My goal is to build something meaningful that makes a difference in someone's life, no matter how big or small. Coding keeps me curious and driven. There's always something new to learn, a new challenge to figure out, and that's what keeps it fun for me.",
+        "ABOUT_TALK":"Let's talk",
+
+        "SKILL_STACK": "MY STACK",
+        "SKILL_AOT": "Skill set",
+
+        "SKILL_OPEN": "Not in use"
+    }
+}

@@ -4,7 +4,9 @@
         <div class="display-flex">
             <div>                 
             <div class="hover-wrapper">
-                <p class="font-size-18 weight-500 flex-justyfy-align white-border hover-text"></p>
+                <p class="font-size-18 weight-500 flex-justyfy-align white-border hover-text" 
+                [attr.data-text]="'TRANSLATE.HEAD_HELLO' | translate" 
+                [attr.data-hover]="'TRANSLATE.HEAD_NAME' | translate"></p>
                 <div class="img-container">
                     <img src="assets/headline_img/waving_hand.svg" class="hover-img" alt="Decorative image" />
                 </div>
@@ -41,7 +43,7 @@
         </div>
         <div class="right display-flex height-48">
             <a class="white-font font-size-18 weight-500 flex-justyfy-align pointer white-border a-hover"
-            href="#contact">Get in Touch</a>
+            href="#contact">{{ 'TRANSLATE.HEAD_CONTACT' | translate }}</a>
         </div>       
     </div>
     <div class="link-container display-flex absolute column">

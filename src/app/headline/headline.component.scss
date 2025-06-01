@@ -20,7 +20,8 @@ section {
     a {
         text-decoration: none;
         border-width: 1px 4px 4px 1px;
-        width: 128px;
+        min-width: 128px;
+        max-width: 256px;
         padding: 8px;
         border-radius: 32px;
         float: right;
@@ -103,7 +104,7 @@ section {
 }
   
 .hover-text::after {
-  content: "Hello world";
+  content: attr(data-text);
   position: relative;
   z-index: 1;
   transition: content 0s linear 0.4s, text-indent 0.4s ease;
@@ -119,7 +120,7 @@ section {
 }
   
 .hover-text:hover::after {
-  content: "I'M DAVOR JEZERNIK";
+  content: attr(data-hover);
 }
   
 .width-600 {

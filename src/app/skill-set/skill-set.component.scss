@@ -18,7 +18,8 @@ section {
 }
 
 .text-container {
-    width: 261px;
+    min-width: 261px;
+    max-width: 400px;
     height: 148px;
     margin-bottom: 64px;
     p {
@@ -34,10 +35,11 @@ section {
 .h1-decoration {
     position: relative;
     height: 108px;
-    width: 260px;
+    min-width: 260px;
+    max-width: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
 }
 

@@ -61,9 +61,11 @@ section {
 .about-me-txt {
     width: 560px;
     a {   
-        width: 132px;
+        min-width: 132px;
+        max-width: 296px;
         height: 40px;
         border-radius: 32px;
+        padding: 0px 8px 0px 8px;
         float: right;
     }
 }

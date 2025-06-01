@@ -1,16 +1,29 @@
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-navbar',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule, TranslateModule], 
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
-  sliderValue = 1; 
+export class NavbarComponent implements OnInit {
+  sliderValue = 1;
+
+  constructor(private languageService: LanguageService) {}
+
+  ngOnInit(): void {
+    const lang = this.languageService.getCurrentLanguage();
+    this.sliderValue = lang === 'en' ? 1 : 2;
+  }
 
   setLanguage(value: number): void {
-    this.sliderValue = value;
-  }
+  this.sliderValue = value;
+  const lang = value === 1 ? 'en' : 'de';
+  this.languageService.setLanguage(lang);  
+}
+
 }

@@ -1,0 +1,26 @@
+{
+    "TRANSLATE": {
+        "NAV_ABOUT_ME": "Über mich",
+        "NAV_SKILLS": "Fähigkeiten",
+        "NAV_PROJECTS": "Projekte",
+        "NAV_CONTACT": "Kontakt",
+
+        "HEAD_HELLO": "Hallo welt",
+        "HEAD_NAME": "ICH BIN DAVOR JEZERNIK",
+        "HEAD_CONTACT": "Lass uns reden",
+
+        "ABOUT_BASED": "Wohnhaft in Graz",
+        "ABOUT_RELOCATE": "Bereit für einen Umzug",
+        "ABOUT_REMOTE": "Offen für Remote-Arbeit",
+        "ABOUT_WHO": "WER IST DAVOR? ",
+        "ABOUT_HEAD": "Über mich",
+        "ABOUT_TEXT": "Hey, ich bin Davor. Technik und Softwareentwicklung haben mich schon immer fasziniert, weil ich es spannend finde, wie schnell sich alles weiterentwickelt. Die Möglichkeiten, die wir heute haben, und das, was in Zukunft noch kommt, inspirieren mich sehr. Ich liebe es, neue Ideen zu entwickeln und sie in etwas Reales zu verwandeln, das Menschen wirklich helfen kann. Mein Ziel ist es, etwas Sinnvolles zu schaffen, das das Leben anderer verbessert – ganz egal, ob im Kleinen oder im Großen. Programmieren hält mich neugierig und motiviert. Es gibt immer etwas Neues zu lernen, neue Herausforderungen zu meistern – und genau das macht es für mich so spannend.",
+        "ABOUT_TALK": "Lass uns reden",
+
+        "SKILL_STACK": "MEIN TECH-STACK",
+        "SKILL_AOT": "Fähigkeiten",
+
+        "SKILL_OPEN": "Not in use"
+
+    }
+}
