@@ -1,22 +1,20 @@
 <section class="section-space display-flex">
     <div class="text-container">
-        <b class="font-size-20 weight-500">MY CRAFT</b>
+        <b class="font-size-20 weight-500">{{ 'TRANSLATE.PROJECTS_CRAFT' | translate }}</b>
         <div class="text-img">
-            <h2 class="font-size-64 weight-700">Projects</h2>
+            <h2 class="font-size-64 weight-700">{{ 'TRANSLATE.PROJECTS_AOT' | translate }}</h2>
             <img src="assets/project_view_img/yellow_line.svg">
         </div>
-        <p class="font-size-18 weight-400">Text</p>
+        <p class="font-size-18 weight-400">{{ 'TRANSLATE.PROJECTS_TEXT' | translate }}</p>
     </div>
     <div class="join-container">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/join_laptop.svg" alt="Join App Preview">
-            <a #templateRefJoin class="hover-link a-hover" [routerLink]="['/project-view', 'join']" id="join">Project details</a>     
+            <a #templateRefJoin class="hover-link a-hover" [routerLink]="['/project-view', 'join']" id="join">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>     
         </div>
         <h3 class="font-size-24 weight-700">Join</h3>
         <p class="font-size-18 weight-400">
-            Task manager inspired by the Kanban System.
-            Create and organize tasks using drag and drop functions,
-            assign users and categories.
+            {{ 'TRANSLATE.PROJECTS_JOIN' | translate }}
         </p>     
     </div>
 </section>
@@ -25,22 +23,21 @@
     <div class="pollo-container">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/pollo.svg">
-            <a #templateRefPollo class="hover-link a-hover" [routerLink]="['/project-view', 'pollo']"  id="pollo">Project details</a>
+            <a #templateRefPollo class="hover-link a-hover" [routerLink]="['/project-view', 'pollo']"  id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
         </div>
         <h3 class="font-size-24 weight-700">El Pollo Loco</h3>
         <p class="font-size-18 weight-400">
-            Jump, run and throw game based on object-oriented approach.
-            Help Pepe to find coins and tabasco salsa to fight against the crazy hen.
+            {{ 'TRANSLATE.PROJECTS_POLLO' | translate }}
         </p>
     </div>
     <div class="bubble-containe">
         <div class="image-wrapper">
             <img class="img-height pointer" src="assets/project_view_img/bubble.svg">
-            <a #templateRefBubble class="hover-link a-hover" [routerLink]="['/project-view', 'bubble']" id="bubble">Project details</a>
+            <a #templateRefBubble class="hover-link a-hover" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
         </div>
         <h3 class="font-size-24 weight-700">DABubble</h3>
         <p class="font-size-18 weight-400">
-            In progress
+            {{ 'TRANSLATE.PROJECTS_BUBBLE' | translate }}
         </p>
     </div>
 </section>

@@ -14,7 +14,7 @@ export const templateLayout: TemplateItem[] = [
         name: 'Join',
         description: 'Task manager inspired by the Kanban System...',
         details: 'Short text that describes your role...',
-        weeks: '8 weeks',
+        weeks: '8',
         githubUrl: 'https://github.com/davorjezernik',
         liveUrl: 'https://github.com/davorjezernik'
     },
@@ -23,7 +23,7 @@ export const templateLayout: TemplateItem[] = [
         name: 'El Pollo Loco',
         description: 'Jump, run and throw game...',
         details: 'Short text that describes your role...',
-        weeks: '5 weeks',
+        weeks: '5',
         githubUrl: 'https://github.com/davorjezernik/elPolloLoco',
         liveUrl: 'https://github.com/davorjezernik'
     },

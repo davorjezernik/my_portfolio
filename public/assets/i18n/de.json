@@ -20,7 +20,43 @@
         "SKILL_STACK": "MEIN TECH-STACK",
         "SKILL_AOT": "Fähigkeiten",
 
-        "SKILL_OPEN": "Not in use"
+        "SKILL_OPEN": "Not in use",
 
+        "PROJECTS_CRAFT": "MEIN HANDWERK",
+        "PROJECTS_AOT": "Projekte",
+        "PROJECTS_TEXT": "Text",
+        "PROJECTS_BUTTON": "Projektdetails",
+        "PROJECTS_JOIN": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+        "PROJECTS_POLLO": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Sauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
+        "PROJECTS_BUBBLE": "In Arbeit",
+
+        "THOUGHTS_WORDS": "IHRE WORTE:",
+        "THOUGHTS_AOT": "Gedanken von Kolleg:innen",
+        "THOUGHTS_TEXT1": "Erster",
+        "THOUGHTS_TEXT2": "Zweiter",
+        "THOUGHTS_TEXT3": "Dritter",
+        "THOUGHTS_PROFILE": "Profil",
+        "WORK_CONTACT": "KONTAKTIERE MICH",
+        "WORK_READY": "Bereit für eine Zusammenarbeit",
+        "WORK_TEXT": "Ermutige die Menschen, dich zu kontaktieren, und beschreibe, welche Rolle dich interessiert. Zeige Selbstvertrauen in deine Fähigkeit, mit deinem Fachwissen und deiner Begeisterung zur Weiterentwicklung einen wertvollen Beitrag zum Team zu leisten. Zeige Interesse an neuen Projekten und hebe gleichzeitig den Mehrwert und die Fähigkeiten hervor, die du einbringen kannst.",
+        "WORK_NAME": "Wie heißt du?",
+        "WORK_EMAIL": "Wie lautet deine E-Mail-Adresse?",
+        "WORK_HELP": "Wie kann ich dir helfen?",
+        "WORK_PLACEHOLDER1": "Dein Name kommt hier hin",
+        "WORK_PLACEHOLDER2": "deineemail@beispiel.de",
+        "WORK_PLACEHOLDER3": "Hallo Davor, ich interessiere mich für ...",
+        "WORK_ACCEPT1": "Ich habe die",
+        "WORK_ACCEPT2": "Datenschutzerklärung",
+        "WORK_ACCEPT3": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+        "WORK_SEND": "Senden",
+
+        "LEGAL_NOTICE": "Impressum",
+
+        "P_VIEW_TEXT1": "Beschreibung",
+        "P_VIEW_TEXT2": "Implementierungsdetails",
+        "P_VIEW_TEXT3": "Dauer",
+        "P_VIEW_WEEKS": "Wochen",
+        "P_VIEW_BACK": "Zurück",
+        "P_VIEW_NEXT": "Nächstes Projekt"
     }
 }
