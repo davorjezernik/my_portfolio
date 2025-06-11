@@ -19,8 +19,8 @@
 
         "SKILL_STACK": "MY STACK",
         "SKILL_AOT": "Skill set",
-
-        "SKILL_OPEN": "Not in use",
+        "SKILL_PULL":"Pull to peel",
+        "SKILL_OPEN": "Also, I'm interested in diving into:",
 
         "PROJECTS_CRAFT": "MY CRAFT",
         "PROJECTS_AOT": "Projects",
@@ -58,6 +58,23 @@
         "P_VIEW_TEXT3": "Duration",
         "P_VIEW_WEEKS": "weeks",
         "P_VIEW_BACK": "Go Back",
-        "P_VIEW_NEXT": "Next Project"
+        "P_VIEW_NEXT": "Next Project",
+
+        "LN_AOT": "Legal Notice",
+        "LN_NAME": "Name",
+        "LN_ADRESS": "Adress",
+        "LN_EMAIL": "Email",
+        "LN_PHONE": "Phone",
+        "LN_CN": "Copyright Notice",
+        "LN_CN_TEXT": "All content on this website, including text, images, code, and design, is protected by copyright law and may not be copied or used without permission.",
+        "LN_DOF": "Disclaimer of Liability",
+        "LN_DOF_TEXT": "This website contains links to external websites. I am not responsible for the content of these external sites. I do not guarantee that the information on this website is always complete, up to date, or free from errors.",
+        "LN_UOF": "Use of Content",
+        "LN_UOF_TEXT": "Any use of the content on this site, including reproduction or distribution, without written permission is strictly prohibited.",
+        "LN_PN": "Privacy Notice",
+        "LN_PN_TEXT": "Mention what data is collected (e.g., name, email, IP address) Why it's collected (e.g., contact, analytics) How it's stored Whether it's shared",
+        "LN_C": "Cookies",
+        "LN_C_TEXT": "If Applicable",
+        "LN_BACK": "BACK"
     }
 }

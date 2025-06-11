@@ -19,8 +19,8 @@
 
         "SKILL_STACK": "MEIN TECH-STACK",
         "SKILL_AOT": "Fähigkeiten",
-
-        "SKILL_OPEN": "Not in use",
+        "SKILL_PULL": "Ziehen, um freizulegen",
+        "SKILL_OPEN": "Außerdem interessiere ich mich dafür, tiefer einzutauchen in:",
 
         "PROJECTS_CRAFT": "MEIN HANDWERK",
         "PROJECTS_AOT": "Projekte",
@@ -57,6 +57,23 @@
         "P_VIEW_TEXT3": "Dauer",
         "P_VIEW_WEEKS": "Wochen",
         "P_VIEW_BACK": "Zurück",
-        "P_VIEW_NEXT": "Nächstes Projekt"
+        "P_VIEW_NEXT": "Nächstes Projekt",
+
+        "LN_AOT": "Impressum",
+        "LN_NAME": "Name",
+        "LN_ADRESS": "Adresse",
+        "LN_EMAIL": "E-Mail",
+        "LN_PHONE": "Telefon",
+        "LN_CN": "Urheberrechtshinweis",
+        "LN_CN_TEXT": "Alle Inhalte dieser Website, einschließlich Texte, Bilder, Code und Design, sind durch das Urheberrecht geschützt und dürfen ohne ausdrückliche Genehmigung nicht kopiert oder verwendet werden.",
+        "LN_DOF": "Haftungsausschluss",
+        "LN_DOF_TEXT": "Diese Website enthält Links zu externen Websites. Für deren Inhalte übernehme ich keine Verantwortung. Es wird keine Gewähr für die Vollständigkeit, Aktualität oder Fehlerfreiheit der Informationen auf dieser Website übernommen.",
+        "LN_UOF": "Nutzung der Inhalte",
+        "LN_UOF_TEXT": "Jegliche Nutzung der Inhalte dieser Seite, einschließlich Vervielfältigung oder Verbreitung, ist ohne schriftliche Genehmigung strengstens untersagt.",
+        "LN_PN": "Datenschutzhinweis",
+        "LN_PN_TEXT": "Es wird darauf hingewiesen, welche Daten erhoben werden (z. B. Name, E-Mail, IP-Adresse), warum sie erhoben werden (z. B. Kontaktaufnahme, Analyse), wie sie gespeichert werden und ob sie weitergegeben werden.",
+        "LN_C": "Cookies",
+        "LN_C_TEXT": "Falls zutreffend",
+        "LN_BACK": "ZURÜCK"
     }
 }

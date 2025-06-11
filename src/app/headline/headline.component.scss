@@ -6,6 +6,7 @@ section {
     height: 100vh;
     width: 100%;
     font-family: 'Poppins';
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
     p {
         margin: 0px;
         width: 128px;
@@ -175,7 +176,7 @@ section {
   width: 36px;
   margin-left: 72px;
   gap: 4px;
-  bottom: 96px;
+  bottom: 128px;
   img {
     border-radius: 100%;
     padding: 4px;
