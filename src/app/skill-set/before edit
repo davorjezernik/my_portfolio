@@ -13,11 +13,11 @@
     </div>
     <div class="second-container display-flex">
         <div class="img-stack display-flex column">
-            
-            <div class="test">
+            <div class="container-one display-flex">
 
+                <div>
 
-                 <div class="container-one display-flex">
+                </div>
                 
                 <div class="img-txt flex-justyfy-align column">
                     <img src="assets\skill_set_img\front_end\html.svg">
@@ -39,6 +39,8 @@
                     <img src="assets\skill_set_img\front_end\angular.svg">
                     <p class="font-size-18 weight-400">Angular</p>
                 </div>
+            </div>
+            <div class="container-two display-flex">
                 <div class="img-txt flex-justyfy-align column">
                     <img src="assets/skill_set_img/front_end/firebase.svg">
                     <p class="font-size-18 weight-400">Firebase</p>
@@ -59,11 +61,9 @@
                     <img src="assets/skill_set_img/front_end/materialdesign.svg">
                     <p class="bigger-width display-flex font-size-18 weight-400">Material Design</p>
                 </div>
-
-
-
-
-                <div class="peel-off-container">  
+            </div>
+        </div>
+        <div class="peel-off-container">  
             <img class="img3" src="assets/skill_set_img/done.png"/>
             <div class="img3-text flex-justyfy-align">
                 <div class="layer-zero flex-justyfy-align column">
@@ -72,7 +72,7 @@
                         <div class="flex-justyfy-align column img-text-learn">
                             <img src="assets/skill_set_img/react.svg">
                             <p class="font-size-16 weight-400">React</p>
-                        </div>  
+                        </div>
                         <div class="flex-justyfy-align column img-text-learn">
                             <img src="assets/skill_set_img/VueJs.svg">
                             <p class="font-size-16 weight-400">Vue Js</p>
@@ -91,18 +91,231 @@
                 </div>
             </div>
         </div>
-            </div>
-
-
-
-            </div>
-
-
-           
-
-
-        </div>
-        
     </div>
 </div>
 </section>
+
+
+
+
+
+section {
+    background-image: url('./../../../public/assets/skill_set_img/background_ss.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins';
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.main-container {
+    position: relative;
+    height: 458px;
+    width: 90%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container {
+    min-width: 261px;
+    max-width: 400px;
+    height: 148px;
+    margin-bottom: 64px;
+    p {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+        margin: 0px;
+    }
+    h1 {
+        margin: 0px;
+    }
+}
+
+.h1-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.bg-wrapper {
+    position: relative;
+    width: fit-content; 
+    aspect-ratio: 260 / 80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-animation {
+    inset: 0;
+    position: absolute;
+    aspect-ratio: 260 / 80;
+    background-image: url('./../../../public/assets/skill_set_img/orange_circle.svg');
+    animation: slideLeftRight 4s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bg-wrapper h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.second-container {
+    justify-content: center;
+    margin-right: 64px;
+}
+
+.img-txt img {
+    filter: grayscale(100%);
+    height: 72px;
+    width: 72px;
+    margin: 0px 32px 0px 32px;
+    transition: filter 0.5s ease transform 0.5s;
+}
+
+.img-txt:hover img {
+    filter: grayscale(0%);
+    transform: scale(0.80);
+}
+
+.bigger-width {
+    width: 140px;
+    justify-content: center;
+}
+
+.peel-off-container {
+    position: relative;
+    .img1,
+    .img1-text,
+    .img2,
+    .img3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 0 45px 32px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(8deg);
+        transition: opacity 0.5s ease-in-out;
+    }
+    .img3 {
+        z-index: -1; 
+        opacity: 1; 
+    }
+    .layer-zero {
+        width: 180px;
+        p {
+            margin: 0px;
+        }
+    }
+    .img-text-learn {
+        margin: 8px;
+    }
+    .img2 {
+        z-index: 1;
+        opacity: 0;
+        &.show {
+        opacity: 1;
+        }
+        &.hide {
+        opacity: 0;
+        }
+    }
+    .img1 {
+        z-index: 2;
+        cursor: pointer;
+        &.hide {
+        opacity: 0;
+        }
+    }
+    .img1-text {
+        z-index: 3;
+        width: 200px;
+        height: 200px;
+        &.hide {
+        opacity: 0;
+        }
+    }
+    .arrow-img {
+        width: 50px;
+        height: 40px;
+    }
+}
+
+.img3-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 0 45px 32px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(8deg);
+}
+
+.layer-one {
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    p {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    .second-container {
+        justify-content: flex-start;
+        margin-left: 32px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    .second-container {
+        flex-direction: column;
+            margin-left: 128px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

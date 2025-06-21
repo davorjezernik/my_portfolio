@@ -15,7 +15,7 @@ export const templateLayout: TemplateItem[] = [
         description: 'Task manager inspired by the Kanban System...',
         details: 'Short text that describes your role...',
         weeks: '8',
-        githubUrl: 'https://github.com/davorjezernik',
+        githubUrl: 'https://github.com/davorjezernik/Join',
         liveUrl: 'https://github.com/davorjezernik'
     },
     {

@@ -1,5 +1,5 @@
 <nav class="display-flex font-size-18 weight-700 legal-privacy">
-    <img class="none" src="assets\headline_img\navbar_img\logo_dj.png">
+  <img class="none" src="assets\headline_img\navbar_img\logo_dj.png">
     <div class="flex-justyfy-align">
         <a class="white-font pointer project-view-color none" href="#aboutme">{{ 'TRANSLATE.NAV_ABOUT_ME' | translate }}</a>
         <div class="circle-container">
@@ -25,7 +25,7 @@
         </div>
     </div>  
 
-    <div class="flex-justyfy-align">
+    <div class="flex-justyfy-align none">
         <div class="flex-justyfy-align">
             <a class="white-font pointer" (click)="setLanguage(1)">EN</a>
             <div class="toggle-en">
@@ -33,16 +33,62 @@
             </div>
         </div>
 
-    <div class="flex-justyfy-align slidecontainer">
+    <div class="flex-justyfy-align slidecontainer none">
         <input type="range" min="1" max="2" class="slider" [(ngModel)]="sliderValue" [disabled]="true"/>
     </div>
 
-    <div class="flex-justyfy-align">
+    <div class="flex-justyfy-align none">
         <a class="white-font pointer" (click)="setLanguage(2)">DE</a>
         <div class="toggle-de">
             <img src="assets/headline_img/navbar_img/toggle.svg">
         </div>
     </div>
+  </div>
+    
+
+  <div class="phone-menu show">
+    <div class="test">
+      <img class="logo-phone" src="assets/headline_img/navbar_img/logo_dj.png" />
+      <a (click)="toggleDropdown()" class="menu-button">
+        <img class="menu-open" src="assets/headline_img/navbar_img/menu.svg" alt="Menu Icon" />
+      </a>
     </div>
+    <div class="dropdown-menu" [class.show]="isDropdownVisible">
+      <div class="menu-content flex-justyfy-align column">
+        <div class="close-button" (click)="toggleDropdown()">
+          <img class="logo-phone" src="assets/headline_img/navbar_img/logo_dj.png" />
+          <img class="close-x" src="assets/headline_img/navbar_img/x.svg" alt="Close Menu" />
+        </div>
+        <div class="flex-justyfy-align column">
+          <a class="white-font" href="#about" (click)="toggleDropdown()">About</a>
+          <a class="white-font" href="#skills" (click)="toggleDropdown()">Skills</a>
+          <a class="white-font" href="#projects" (click)="toggleDropdown()">Projects</a>
+          <a class="white-font" href="#contact" (click)="toggleDropdown()">Contact</a>
+        </div>
+        <div class="flex-justyfy-align language-switcher-mobile">
+          <div class="flex-justyfy-align">
+            <a class="white-font pointer" (click)="setLanguage(1)">EN</a>
+          </div>
+          <div class="flex-justyfy-align slidecontainer">
+            <input type="range" min="1" max="2" class="slider" [(ngModel)]="sliderValue" [disabled]="true"/>
+          </div>
+          <div class="flex-justyfy-align">
+            <a class="white-font pointer" (click)="setLanguage(2)">DE</a>
+          </div>
+        </div>
+        <div class="phone-menu-hyper display-flex">
+          <a href="https://www.linkedin.com/in/davor-jezernik-a69515261/">
+            <img class="pointer white-border social-link" src="assets/headline_img/linkedin.svg"/>
+          </a>
+          <a href="https://github.com/davorjezernik">
+            <img class="pointer white-border social-link" src="assets/headline_img/github.svg"/>
+          </a>
+          <a href="">
+            <img class="pointer white-border social-link" src="assets/headline_img/mail.svg"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </nav>

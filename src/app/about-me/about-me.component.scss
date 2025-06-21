@@ -113,3 +113,68 @@ section {
     background-color: rgb(248, 122, 85);
     transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
+
+@media screen and (max-width: 1200px) {
+    .smaller-column {
+        flex-direction: column-reverse;
+    }
+    section {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    section {
+        height: 180vh;
+    }
+    .img-txt {
+        font-size: 14px;
+    }
+    .widtg-change {
+        width: 256px;
+    }
+    .yellow-paper,
+    .blue-paper,
+    .orange-paper {
+        width: 256px;
+        img {
+        height: 16px;
+        width: 16px;
+        margin: 8px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .yellow-paper {
+        height: 72px;
+        top: 32px;
+    }
+    .blue-paper {
+        height: 64px;
+        top: 80px;
+    }
+    .orange-paper {
+        height: 80px;
+        top: 120px;
+    }
+    .about-me-txt {
+        font-size: 16px;
+    }
+    .other-width {
+        width: 160px;
+    }
+    .h2-img-container {
+        img {
+            width: 160px;
+        }
+    }
+    .about-me-txt {
+        a {
+            min-width: 96px;
+            height: 32px;
+        }
+    }
+}
+
+

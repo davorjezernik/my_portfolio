@@ -12,6 +12,7 @@ import { LanguageService } from '../services/language.service';
 })
 export class NavbarComponent implements OnInit {
   sliderValue = 1;
+  isDropdownVisible = false;
 
   constructor(private languageService: LanguageService) {}
 
@@ -24,6 +25,10 @@ export class NavbarComponent implements OnInit {
   this.sliderValue = value;
   const lang = value === 1 ? 'en' : 'de';
   this.languageService.setLanguage(lang);  
+  }
+
+  toggleDropdown() {
+    this.isDropdownVisible = !this.isDropdownVisible;
 }
 
 }
