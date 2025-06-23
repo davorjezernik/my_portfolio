@@ -118,7 +118,7 @@ section {
   .img3 {
     position: absolute;
     top: 0;
-    left: 6px;
+    left: 0;
     width: 200px;
     height: 200px;
     transform: rotate(8deg);
@@ -157,10 +157,6 @@ section {
     height: 40px;
   }
 
-  .img3-text {
-    left: 6px;
-  }
-
   .layer-zero {
     width: 180px;
 
@@ -177,7 +173,7 @@ section {
 .img3-text {
   position: absolute;
   top: 0;
-  left: 6;
+  left: 0;
   width: 200px;
   height: 200px;
   transform: rotate(8deg);
@@ -200,10 +196,6 @@ section {
   }
 }
 
-.none {
-  display: none;
-}
-
 @media screen and (max-width: 1101px) {
   .img-txt img {
     filter: grayscale(0%);
@@ -211,8 +203,12 @@ section {
 }
 
 @media screen and (max-width: 1001px) {
-  .peel-off-container {
-    display: none;
+  section {
+    height: 120vh;
+  }
+  .second-container {
+    flex-direction: column;
+    align-items: center;
   }
   .text-container {
     margin-bottom: 0px;
@@ -222,16 +218,9 @@ section {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .none {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 801px) {
-  section {
-    height: 120vh;
-  }
 
   .main-container {
     top: 30%;
@@ -253,38 +242,27 @@ section {
   section {
     height: 160vh;
   }
-
   .container-one {
     width: 300px;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .text-container {
     margin-bottom: 0;
   }
-
   .aot-container {
     justify-content: flex-end;
   }
-
   .font-size-20 {
     font-size: 16px;
   }
-
   .img-txt img {
     filter: grayscale(0%);
     margin: 0 16px;
   }
-
   .img-txt img {
     margin: 0 8px;
   }
-
-  .edit-width {
-    width: 64px;
-  }
-
   .test img {
     height: 200px;
     width: 200px;

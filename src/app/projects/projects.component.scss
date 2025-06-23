@@ -184,6 +184,9 @@ section {
   .section-space {
     flex-direction: column;
   }
+}
+
+@media (pointer: coarse) and (max-width: 1201px) {
   .none {
     display: block;
   }
