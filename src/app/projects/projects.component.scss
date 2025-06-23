@@ -153,10 +153,79 @@ section {
 }
 
 .pollo-container {
-    width: 560px;
+  width: 560px;
 }
 
 .bubble-containe {
-    width: 560px;
+  width: 560px;
 }
 
+.touch-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.touch-button {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: solid rgb(0, 0, 0);
+  border-width: 1px 4px 4px 1px;
+  border-radius: 32px;
+  padding: 8px; 
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 1201px) {
+  .section-space {
+    flex-direction: column;
+  }
+  .none {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  section {
+    height: 120vh;
+  }
+  .section-space {
+    justify-content: center;
+  }
+  .image-wrapper {
+    img {
+      width: 300px;
+    }
+  }
+  .font-size-18 {
+    font-size: 16px;
+  }
+  .font-size-24 {
+    font-size: 20px;
+  }
+  .text-container {
+    width: 300px;
+    img {
+      width: 140px;
+    }
+  }
+  .join-container {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 32px;
+  }
+  .pollo-container {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 32px;
+  }
+  .bubble-containe {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 32px;
+  }
+}

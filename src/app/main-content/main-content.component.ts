@@ -6,7 +6,6 @@ import { SkillSetComponent } from '../skill-set/skill-set.component';
 import { ProjectsComponent } from '../projects/projects.component'; 
 import { ThoughtsComponent } from '../thoughts/thoughts.component'; 
 import { ReadyToWorkComponent } from '../ready-to-work/ready-to-work.component'; 
-import { TestComponent } from '../test/test.component';
 
 @Component({
   selector: 'app-main-content',
@@ -17,7 +16,7 @@ import { TestComponent } from '../test/test.component';
     SkillSetComponent,
     ProjectsComponent,
     ThoughtsComponent,
-    ReadyToWorkComponent, TestComponent
+    ReadyToWorkComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss']

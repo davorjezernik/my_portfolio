@@ -1,24 +1,21 @@
 <section class="white-font">
 <div class="main-container display-flex column">
-    <div class="text-container display-flex column">
-        <div class="h1-decoration">
-            <div class="text-block">
-                <p class="font-size-20 weight-500">{{ 'TRANSLATE.SKILL_STACK' | translate }}</p>
-                <div class="bg-wrapper">
-                    <div class="bg-animation"></div>
-                    <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.SKILL_AOT' | translate }}</h1>
+    <div class="aot-container">
+        <div class="text-container display-flex column">
+            <div class="h1-decoration">
+                <div class="text-block">
+                    <p class="font-size-20 weight-500">{{ 'TRANSLATE.SKILL_STACK' | translate }}</p>
+                    <div class="bg-wrapper">
+                        <div class="bg-animation"></div>
+                        <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.SKILL_AOT' | translate }}</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="second-container display-flex">
         <div class="img-stack display-flex column">
-            
-            <div class="test">
-
-
-                 <div class="container-one display-flex">
-                
+            <div class="container-one display-flex">
                 <div class="img-txt flex-justyfy-align column">
                     <img src="assets\skill_set_img\front_end\html.svg">
                     <p class="font-size-18 weight-400">HTML</p>
@@ -57,52 +54,69 @@
                 </div>
                 <div class="img-txt flex-justyfy-align column">
                     <img src="assets/skill_set_img/front_end/materialdesign.svg">
-                    <p class="bigger-width display-flex font-size-18 weight-400">Material Design</p>
+                    <p class="edit-width display-flex font-size-18 weight-400">Material Design</p>   
                 </div>
-
-
-
-
-                <div class="peel-off-container">  
-            <img class="img3" src="assets/skill_set_img/done.png"/>
-            <div class="img3-text flex-justyfy-align">
-                <div class="layer-zero flex-justyfy-align column">
-                    <p class="font-size-18 weight-700">{{ 'TRANSLATE.SKILL_OPEN' | translate }}</p>
-                    <div class="display-flex">
-                        <div class="flex-justyfy-align column img-text-learn">
-                            <img src="assets/skill_set_img/react.svg">
-                            <p class="font-size-16 weight-400">React</p>
-                        </div>  
-                        <div class="flex-justyfy-align column img-text-learn">
-                            <img src="assets/skill_set_img/VueJs.svg">
-                            <p class="font-size-16 weight-400">Vue Js</p>
+                <div class="none">
+                    <div class="peel-off-container-smaller">  
+                        <img class="img3" src="assets/skill_set_img/done.png"/>
+                        <div class="img3-text flex-justyfy-align">
+                            <div class="layer-zero flex-justyfy-align column">
+                                <p class="font-size-18 weight-700">{{ 'TRANSLATE.SKILL_OPEN' | translate }}</p>
+                                <div class="display-flex">
+                                    <div class="flex-justyfy-align column img-text-learn">
+                                        <img src="assets/skill_set_img/react.svg">
+                                        <p class="font-size-16 weight-400">React</p>
+                                    </div>  
+                                    <div class="flex-justyfy-align column img-text-learn">
+                                        <img src="assets/skill_set_img/VueJs.svg">
+                                        <p class="font-size-16 weight-400">Vue Js</p>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                        <img class="img2" src="assets/skill_set_img/mid.svg" [ngClass]="{ show: showImg2 && !hideImg2, hide: hideImg2 }"/>
+                        <div (click)="startPeelOff()">
+                            <img class="img1" src="assets/skill_set_img/default.png" [class.hide]="hideImg1"/>
+                            <div class="img1-text flex-justyfy-align" [class.hide]="hideImg1Text">
+                                <div class="layer-one flex-justyfy-align">
+                                    <img class="arrow-img" src="assets/skill_set_img/white_arrow.png" />
+                                    <p class="font-size-24 weight-400">{{ 'TRANSLATE.SKILL_PULL' | translate }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>       
+                </div>
             </div>
-            <img class="img2" src="assets/skill_set_img/mid.svg" [ngClass]="{ show: showImg2 && !hideImg2, hide: hideImg2 }"/>
-            <div (click)="startPeelOff()">
-                <img class="img1" src="assets/skill_set_img/default.png" [class.hide]="hideImg1"/>
-                <div class="img1-text flex-justyfy-align" [class.hide]="hideImg1Text">
-                    <div class="layer-one flex-justyfy-align">
-                        <img class="arrow-img" src="assets/skill_set_img/white_arrow.png" />
-                        <p class="font-size-24 weight-400">{{ 'TRANSLATE.SKILL_PULL' | translate }}</p>
+            
+            </div> 
+                <div class="peel-off-container">  
+                    <img class="img3" src="assets/skill_set_img/done.png"/>
+                    <div class="img3-text flex-justyfy-align">
+                        <div class="layer-zero flex-justyfy-align column">
+                            <p class="font-size-18 weight-700">{{ 'TRANSLATE.SKILL_OPEN' | translate }}</p>
+                            <div class="display-flex">
+                                <div class="flex-justyfy-align column img-text-learn">
+                                    <img src="assets/skill_set_img/react.svg">
+                                    <p class="font-size-16 weight-400">React</p>
+                                </div>  
+                                <div class="flex-justyfy-align column img-text-learn">
+                                    <img src="assets/skill_set_img/VueJs.svg">
+                                    <p class="font-size-16 weight-400">Vue Js</p>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                    <img class="img2" src="assets/skill_set_img/mid.svg" [ngClass]="{ show: showImg2 && !hideImg2, hide: hideImg2 }"/>
+                    <div (click)="startPeelOff()">
+                        <img class="img1" src="assets/skill_set_img/default.png" [class.hide]="hideImg1"/>
+                        <div class="img1-text flex-justyfy-align" [class.hide]="hideImg1Text">
+                            <div class="layer-one flex-justyfy-align">
+                                <img class="arrow-img" src="assets/skill_set_img/white_arrow.png" />
+                                <p class="font-size-24 weight-400">{{ 'TRANSLATE.SKILL_PULL' | translate }}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            </div>
-
-
-
-            </div>
-
-
-           
-
-
-        </div>
-        
-    </div>
-</div>
 </section>
