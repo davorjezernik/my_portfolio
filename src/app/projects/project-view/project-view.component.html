@@ -1,10 +1,15 @@
 <section>
 
+    <div class="background-img-container">
+        <img class="background-img remove-bg-1" src="assets/projects_img/bg.png">
+        <img class="remove-bg-2" src="assets/projects_img/phonebg.png">
+    </div>
+
     <app-navbar class="navbar-container absolute flex-justyfy-align"></app-navbar>
     
     <div class="content-containe">
 
-        <div class="go-back">
+        <div class="go-back remove-button">
             <a class="display-flex" href="#projects">
                 <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
             </a>          
@@ -14,7 +19,7 @@
         <div>
             <div class="main-container display-flex">
             <div>
-                <div>
+                <div class="project-info">
                     <div class="headline-img">
                         <div class="text-wrapper">
                             <h1 class="font-size-64 weight-700">{{ selectedProject?.name }}</h1>
@@ -71,10 +76,24 @@
                 </div>
                     
             </div>
+            <div class="show-button">
+            <div class="display-flex">
+                <a class="display-flex" href="#projects">
+                    <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
+                </a>          
+                <a class="font-size-18 weight-700 white-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
+            </div>
+            <div class="display-flex">
+                <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
+                <a class="display-flex" (click)="goToNextProject()">
+                    <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
+                </a>
+            </div>
+        </div>
         </div>
         </div>
 
-        <div class="go-next">
+        <div class="go-next remove-button">
             <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
             <a class="display-flex" (click)="goToNextProject()">
                 <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">

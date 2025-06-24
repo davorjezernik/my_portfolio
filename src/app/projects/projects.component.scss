@@ -180,6 +180,10 @@ section {
   display: none;
 }
 
+.none-mobile {
+  display: block;
+}
+
 @media screen and (max-width: 1201px) {
   .section-space {
     flex-direction: column;
@@ -189,6 +193,9 @@ section {
 @media (pointer: coarse) and (max-width: 1201px) {
   .none {
     display: block;
+  }
+  .none-mobile {
+    display: none;
   }
 }
 

@@ -1,5 +1,5 @@
 section {
-    background-image: url('./../../../../public/assets/projects_img/bg.png');
+    //background-image: url('./../../../../public/assets/projects_img/bg.png');
     background-color: rgb(29, 29, 29);
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,6 +7,17 @@ section {
     height: 100vh;
     width: 100%;
     font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.background-img-container {
+    height: 100%;
+}
+
+.background-img {
+    object-fit: cover;
+    height: 100%;
+    width: 110%;
 }
 
 .content-containe {
@@ -38,12 +49,7 @@ section {
 
 
 :host ::ng-deep app-navbar nav {
-    width: 100% !important;
-    justify-content: space-between;
-}
-
-:host ::ng-deep app-navbar  {
-    width: 99% !important;
+    width: 96% !important;
     justify-content: space-between;
 }
 
@@ -53,6 +59,8 @@ section {
 
 .navbar-container {
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .main-container {
@@ -160,5 +168,84 @@ section {
     }
     .next-hover {
         transition: color 0.2s ease, filter 0.2s ease;
+    }
+}
+
+.button-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.show-button {
+    display: none;
+}
+
+.remove-bg-2 {
+    display: none;
+}
+
+@media screen and (max-width: 1401px) {
+    .main-container {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    .background-img {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    .main-container {
+        width: 720px;
+    }
+    .project-info,
+    .img-project {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    .background-img {
+        transform: rotate(90deg);
+    }
+    .background-img {
+        width: 110%;
+    }
+    .remove-button {
+        display: none;
+    }
+    .show-button {
+        display: block;
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+    .remove-bg-1 {
+        display: none;
+    }
+    .remove-bg-2 {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    section {
+        height: 144vh;
+    }
+    .content-containe {
+        margin-top: 136px;
+    }
+    .remove-bg-2 {
+        height: 120%;
     }
 }
