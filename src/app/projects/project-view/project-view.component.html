@@ -1,72 +1,78 @@
 <section>
 
-    <div class="background-img-container">
-        <img class="background-img remove-bg-1" src="assets/projects_img/bg.png">
-        <img class="remove-bg-2" src="assets/projects_img/phonebg.png">
-    </div>
-
     <app-navbar class="navbar-container absolute flex-justyfy-align"></app-navbar>
-    
-    <div class="content-containe">
 
+    <div class="main-container flex-justyfy-align column">
+        
         <div class="go-back remove-button">
-            <a class="display-flex" href="#projects">
-                <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
-            </a>          
-            <a class="font-size-18 weight-700 black-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
+            <div class="hover-back-container display-flex">
+                <a class="display-flex" href="#projects">
+                    <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
+                </a>          
+                <a class="font-size-18 weight-700 black-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
+            </div>
         </div>
 
-        <div>
-            <div class="main-container display-flex">
-            <div>
-                <div class="project-info">
+
+
+        <div class="content-container flex-justyfy-align">
+
+            <div class="container-one flex-justyfy-align">
+                
+                <div class="container-one-inner flex-justyfy-align column">
+
+                <div class="project-info set-width">
                     <div class="headline-img">
                         <div class="text-wrapper">
                             <h1 class="font-size-64 weight-700">{{ selectedProject?.name }}</h1>
                             <img src="assets/about_me_img/blue_line.svg">
                         </div>
                     </div>
-                    <div>
+                    <div class="set-width">
                         <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT1' | translate }}</p>
                         <span class="font-size-18 weight-400">
                             {{ selectedProject?.description }}
                         </span>
                     </div>
                 </div>
-                <div>
+                <div class="set-width">
                     <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT2' | translate }}</p>
                     <span class="font-size-18 weight-400">
                         {{ selectedProject?.details }}
                     </span>
                 </div>
-                <div>
+                <div class="set-width">
                     <div class="margin-16">
                         <p class="font-size-18 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT3' | translate }}:
                         <span class="font-size-18 weight-400">{{ selectedProject?.weeks }}
                         {{ 'TRANSLATE.P_VIEW_WEEKS' | translate }}</span></p>
                     </div>
-                    <div class="skill-setup">
+                    <div class="skill-setup display-flex">
                          <p class="flex-justyfy-align" *ngFor="let skill of skills">
                             <img [src]="skill.icon" [alt]="skill.label + ' icon'" width="20" height="20" *ngIf="skill.icon" />
                             {{ skill.label }}
                         </p>
                     </div>
                 </div>
+
+                </div>
+            
             </div>
 
-            <div class="button-img-container">
+            <div class="container-two flex-justyfy-align column ">
+                
                 <img class="img-project" src="assets/project_view_img/{{ selectedProject?.id }}.svg">
                     
-                <div class="button-container" *ngIf="selectedProject as project">
+                <div class="button-container-img display-flex" *ngIf="selectedProject as project">
 
-                    <div class="button-container-inner" *ngIf="project.githubUrl">
+                    <div class="button-container-inner-img" *ngIf="project.githubUrl">
                         <a class="font-size-18 weight-500 hover-link a-hover"
                         [href]="project.githubUrl"
                         target="_blank"
                         rel="noopener noreferrer">Github</a>
                     </div>
 
-                    <div class="button-container-inner" *ngIf="project.liveUrl">
+                    <div class="button-container-inner-img" *ngIf="project.liveUrl">
                         <a class="font-size-18 weight-500 hover-link a-hover"
                         [href]="project.liveUrl"
                         target="_blank"
@@ -74,32 +80,29 @@
                     </div>
 
                 </div>
-                    
+            
             </div>
-            <div class="show-button">
-            <div class="display-flex">
+     
+        </div>
+
+
+        <div class="button-container display-flex">
+            <div class="button-back none">
                 <a class="display-flex" href="#projects">
                     <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
                 </a>          
                 <a class="font-size-18 weight-700 white-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
             </div>
-            <div class="display-flex">
+            <div class="button-next display-flex">
                 <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
                 <a class="display-flex" (click)="goToNextProject()">
                     <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
                 </a>
             </div>
         </div>
-        </div>
-        </div>
-
-        <div class="go-next remove-button">
-            <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
-            <a class="display-flex" (click)="goToNextProject()">
-                <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
-            </a>
-        </div>
-
+ 
     </div>
+
+    
 
 </section>

@@ -151,8 +151,9 @@ body {
     justify-content: center;
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 801px) {
   .font-size-64 {
-  font-size: 32px;
+    font-size: 48px;
+  }
 }
-}
+

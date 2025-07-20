@@ -1,54 +1,68 @@
 <section class="white-font">
-    <div class="main-container absolute">
-        <div class="main-container-rotate display-flex">
-            <div class="text-container">
-                <p class="font-size-20 weight-500">{{ 'TRANSLATE.WORK_CONTACT' | translate }}</p>
-                <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.WORK_READY' | translate }}</h1>
-                <span class="font-size-18 weight-400">
-                   {{ 'TRANSLATE.WORK_TEXT' | translate }}
-                </span>
-                <div class="arrow-container">
-                    <img src="assets/ready_to_work_img/yellow_arrwo.svg">
-                </div>
-            </div> 
-            <form class="form-container display-flex column"> 
-                <div class="hover-form">
-                    <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_NAME' | translate }}</p>
-                    <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER1' | translate }}" type="text">
-                    <div class="yellow-line"></div>
-                </div>                
-                <div class="hover-form">
-                    <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_EMAIL' | translate }}</p>
-                    <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER2' | translate }}" type="text">
-                    <div class="yellow-line"></div>
-                </div>
-                <div class="hover-form">
-                    <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_HELP' | translate }}</p>
-                    <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER3' | translate }}" type="text">
-                    <div class="yellow-line"></div>
-                </div>
-                <div class="agreement-container display-flex column">
-                    <div class="disply-flex display-flex">
-                        <input class="checkbox pointer" type="checkbox">
-                        <div>
-                            <span class="weight-400">
-                                {{ 'TRANSLATE.WORK_ACCEPT1' | translate }} <a href="privacypolicy">{{ 'TRANSLATE.WORK_ACCEPT2' | translate }}</a> 
-                                {{ 'TRANSLATE.WORK_ACCEPT3' | translate }}
-                            </span>
-                        </div>
+    <div class="main-container flex-justyfy-align">
+
+        <div class="content-container display-flex">
+            <div class="container-one display-flex">
+                <div class="text-container">
+                    <p class="font-size-20 weight-500">{{ 'TRANSLATE.WORK_CONTACT' | translate }}</p>
+                    <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.WORK_READY' | translate }}</h1>
+                    <span class="font-size-18 weight-400">
+                    {{ 'TRANSLATE.WORK_TEXT' | translate }}
+                    </span>
+                    <div class="arrow-container none">
+                        <img src="assets/ready_to_work_img/yellow_arrwo.svg">
                     </div>
-                    <div>
-                        <div class="sent-button flex-justyfy-align">
-                            <a class="font-size-18 weight-500 pointer">{{ 'TRANSLATE.WORK_SEND' | translate }}</a>
-                        </div>
+                </div> 
+            </div>
+
+            <div class="container-two display-flex">
+                <form> 
+                    <div class="hover-form">
+                        <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_NAME' | translate }}</p>
+                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER1' | translate }}" type="text">
+                        <div class="yellow-line"></div>
+                    </div>                
+                    <div class="hover-form">
+                        <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_EMAIL' | translate }}</p>
+                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER2' | translate }}" type="text">
+                        <div class="yellow-line"></div>
                     </div>
-                </div>                   
-            </form>   
+                    <div class="hover-form">
+                        <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_HELP' | translate }}</p>
+                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER3' | translate }}" type="text">
+                        <div class="yellow-line"></div>
+                    </div>
+                    <div class="agreement-container display-flex column">
+                        <div class="disply-flex display-flex">
+                            <input class="checkbox pointer" type="checkbox">
+                            <div>
+                                <span class="weight-400">
+                                    {{ 'TRANSLATE.WORK_ACCEPT1' | translate }} <a href="privacypolicy">{{ 'TRANSLATE.WORK_ACCEPT2' | translate }}</a> 
+                                    {{ 'TRANSLATE.WORK_ACCEPT3' | translate }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="display-flex container-send">
+                            <div class="flex-justyfy-align">
+                                <div class="arrow-container-mobile show">
+                                    <img src="assets/ready_to_work_img/yellow_arrwo.svg">
+                                </div>
+                            </div>
+                            <div class="sent-button flex-justyfy-align">
+                                <a class="font-size-18 weight-500 pointer">{{ 'TRANSLATE.WORK_SEND' | translate }}</a>
+                            </div>
+                        </div>
+                    </div>                   
+                </form>
+            </div>
         </div>
+
     </div>
-    <div class="footer-position absolute">
-        <div class="footer-container flex-justyfy-align">
-            <app-footer></app-footer>
-        </div>
+
+    
+    <div class="footer-container">
+        <app-footer></app-footer>
     </div>
+    
 </section>
+

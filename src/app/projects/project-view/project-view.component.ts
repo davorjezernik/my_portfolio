@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-project-view',
   standalone: true,
-  imports: [NavbarComponent, NgFor, NgIf, TranslateModule],
+  imports: [NavbarComponent ,NgFor, NgIf, TranslateModule],
   templateUrl: './project-view.component.html',
   styleUrl: './project-view.component.scss'
 })

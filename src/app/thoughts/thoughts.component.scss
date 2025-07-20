@@ -1,61 +1,26 @@
 section {
     height: 100vh;
-    font-family: 'Poppins';
+    width: 100%;
     h2 {
         margin: 0px;
-        line-height: 1.16;
     }
 }
 
-.container-one {
+.main-container {
+    height: 100%;
     width: 90%;
+}
+
+.container-one {
+    width: 100%;
     height: 136px;
     align-items: flex-end;
-}
-
-.card-one,
-.card-two-container,
-.card-three-container {
-  transition: z-index 0s, transform 0.3s ease;
-}
-
-.img-hover {
-    position: absolute;
-    opacity: 0;
-    z-index: 1; 
-    transition: opacity 0.3s ease; 
-}
-
-.card-one:hover .img-hover,
-.card-two-container:hover .img-hover,
-.card-three-container:hover .img-hover {
-    opacity: 0.6;
-    z-index: 2; 
-}
-
-.hover-img-txt {
-    position: relative;
-    z-index: 3; 
-}
-
-.hover-img-txt:hover {
-    color: rgb(248, 249, 250);
-    filter: brightness(0) invert(1); 
-}
-
-.hover-effect:hover {
-    z-index: 3; 
-}
-
-.hover-effect:hover p,
-.hover-effect:hover h4 {
-    color: rgb(248, 249, 250); 
+    margin: 32px 0px 32px 0px;
 }
 
 .text-img {
     height: 40px;
     align-items: center;
-    display: flex; 
     overflow: hidden; 
 }
 
@@ -94,56 +59,65 @@ section {
     }
 }
 
-.card-container {
+.container-two {
+    position: relative;
     width: 1200px;
-    height: 404px;
-    margin-top: 64px;
+    height: 440px;
 }
 
 .card-one {
     background-image: url('./../../../public/assets/thoughts_img/rectangle_sticker.svg');
     width: 512px;
-    height: 320px; 
-    z-index: 1;
-}
-
-.card-two-container {
-    z-index: 2;
-    left: 120px;
+    height: 320px;
+    left: 0px;
+    z-index: 3;
     transform: rotate(-4deg);
-    margin-bottom: 96px;
 }
 
 .card-two {
     background-image: url('./../../../public/assets/thoughts_img/rectangle_sticker.svg');
     width: 512px;
     height: 320px;
-}
-
-.card-three-container {
-    z-index: 0;
-    right: 120px;
-    transform: rotate(4deg);
-    margin-bottom: 96px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .card-three {
     background-image: url('./../../../public/assets/thoughts_img/rectangle_sticker.svg');
     width: 512px;
     height: 320px;
+    right: 0;
+    z-index: 1;
+    transform: rotate(4deg);
 }
 
-.height {
-    height: 100%;
+.hover-effect:hover {
+    z-index: 4; 
 }
 
-.card-container-center {
-    justify-content: center;
-    height: 100%;
+.hover-effect:hover p,
+.hover-effect:hover h4 {
+    color: rgb(248, 249, 250); 
+}
+
+.img-hover {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.card-one:hover .img-hover,
+.card-two:hover .img-hover,
+.card-three:hover .img-hover {
+    opacity: 0.6;
+    z-index: 1;
 }
 
 .width-height {
     width: 90%;
+    height: 90%;
     justify-content: space-between;
     margin: 24px 8px 24px 8px;
 }
@@ -160,10 +134,57 @@ section {
     }
 }
 
-.flex {
-    align-items: center;
-    img {
-        height: 18px;
-        width: 18px;
+.hover-img-txt {
+    position: relative;
+    z-index: 3; 
+}
+
+.hover-img-txt:hover {
+    color: rgb(248, 249, 250);
+    filter: brightness(0) invert(1); 
+}
+
+@media (pointer: coarse) and (max-width: 1401px) {
+    .absolute {
+        position: static;
+    }
+    .container-two {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 100%;
+    }
+    .card-two {
+        transform: translate(0%, 0%);
+    }
+    section {
+        height: 100%;
     }
 }
+
+
+@media screen and (max-width: 801px) {
+    .card-one,
+    .card-two,
+    .card-three {
+       width: 300px;
+       border-radius: 10%;
+    }
+    .img-hover {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .container-one {
+        height: 200px;
+    }
+    .flex-end-mobile {
+        justify-content: flex-end;
+    }
+}
+

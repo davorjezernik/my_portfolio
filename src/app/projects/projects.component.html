@@ -1,54 +1,66 @@
-<section class="section-space display-flex">
-    <div class="text-container">
-        <b class="font-size-20 weight-500">{{ 'TRANSLATE.PROJECTS_CRAFT' | translate }}</b>
-        <div class="text-img">
-            <h2 class="font-size-64 weight-700">{{ 'TRANSLATE.PROJECTS_AOT' | translate }}</h2>
-            <img src="assets/project_view_img/yellow_line.svg">
+<section class="display-flex">
+
+    <div class="main-container">
+
+        <div class="container-one display-flex">
+            <div class="text-container display-flex column">
+                <b class="font-size-20 weight-500">{{ 'TRANSLATE.PROJECTS_CRAFT' | translate }}</b>
+                <div class="text-img">
+                    <h2 class="font-size-64 weight-700">{{ 'TRANSLATE.PROJECTS_AOT' | translate }}</h2>
+                    <img src="assets/project_view_img/yellow_line.svg">
+                </div>
+                <p class="font-size-18 weight-400">{{ 'TRANSLATE.PROJECTS_TEXT' | translate }}</p>
+            </div>
+            <div class="project-container display-flex column">
+                <div class="image-wrapper">
+                    <img class="pointer" src="assets/project_view_img/join_laptop.svg" alt="Join App Preview">
+                    <a #templateRefJoin class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'join']" id="join">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>     
+                </div>
+                <div class="text-wraper">
+                    <h3 class="font-size-24 weight-700">Join</h3>
+                    <p class="font-size-18 weight-400">
+                        {{ 'TRANSLATE.PROJECTS_JOIN' | translate }}
+                    </p>
+                    <div class="touch-button-container">
+                        <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'join']" id="join">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
+                    </div> 
+                </div>    
+            </div>
         </div>
-        <p class="font-size-18 weight-400">{{ 'TRANSLATE.PROJECTS_TEXT' | translate }}</p>
-    </div>
-    <div class="join-container">
-        <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/join_laptop.svg" alt="Join App Preview">
-            <a #templateRefJoin class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'join']" id="join">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>     
+
+        <div class="container-two display-flex">
+            <div class="project-container">
+                <div class="image-wrapper">
+                    <img class="img-height pointer" src="assets/project_view_img/pollo.svg">
+                    <a #templateRefPollo class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'pollo']"  id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
+                </div>
+                <div class="text-wraper">
+                    <h3 class="font-size-24 weight-700">El Pollo Loco</h3>
+                    <p class="font-size-18 weight-400">
+                        {{ 'TRANSLATE.PROJECTS_POLLO' | translate }}
+                    </p>
+                    <div class="touch-button-container">
+                        <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'pollo']" id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
+                    </div>  
+                </div>     
+            </div>
+            <div class="project-container">
+                <div class="image-wrapper">
+                    <img class="img-height pointer" src="assets/project_view_img/bubble.svg">
+                    <a #templateRefBubble class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
+                </div>
+                <div class="text-wraper">
+                        <h3 class="font-size-24 weight-700">DABubble</h3>
+                    <p class="font-size-18 weight-400">
+                        {{ 'TRANSLATE.PROJECTS_BUBBLE' | translate }}
+                    </p>
+                    <div class="touch-button-container">
+                        <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
+                    </div>
+                </div>  
+            </div>
         </div>
-        <h3 class="font-size-24 weight-700">Join</h3>
-        <p class="font-size-18 weight-400">
-            {{ 'TRANSLATE.PROJECTS_JOIN' | translate }}
-        </p>
-        <div class="touch-button-container">
-            <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'join']" id="join">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-        </div>     
+
     </div>
+
 </section>
-
-<section class="section-space section-two display-flex">
-    <div class="pollo-container">
-        <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/pollo.svg">
-            <a #templateRefPollo class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'pollo']"  id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-        </div>
-        <h3 class="font-size-24 weight-700">El Pollo Loco</h3>
-        <p class="font-size-18 weight-400">
-            {{ 'TRANSLATE.PROJECTS_POLLO' | translate }}
-        </p>
-        <div class="touch-button-container">
-            <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'pollo']" id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-        </div>  
-    </div>
-    <div class="bubble-containe">
-        <div class="image-wrapper">
-            <img class="img-height pointer" src="assets/project_view_img/bubble.svg">
-            <a #templateRefBubble class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-        </div>
-        <h3 class="font-size-24 weight-700">DABubble</h3>
-        <p class="font-size-18 weight-400">
-            {{ 'TRANSLATE.PROJECTS_BUBBLE' | translate }}
-        </p>
-        <div class="touch-button-container">
-            <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-        </div>  
-    </div>
-</section>
-
-

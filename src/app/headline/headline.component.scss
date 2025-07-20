@@ -1,41 +1,50 @@
 section {
-    background-image: url('./../../../public/assets/headline_img/background.png');
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 100vh;
-    width: 100%;
-    font-family: 'Poppins';
-    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
-    p {
-        margin: 0px;
-        width: 128px;
-        padding: 8px;
-        border-radius: 32px;
-    }
-    h1 {
-        font-size: 128px;
-        line-height: 1;
-        margin: 16px 0px 16px 0px;
-    }
-    a {
-        text-decoration: none;
-        border-width: 1px 4px 4px 1px;
-        min-width: 128px;
-        max-width: 256px;
-        padding: 8px;
-        border-radius: 32px;
-        float: right;
-    }
-}
+  background-image: url('./../../../public/assets/headline_img/background.png');
+  background-size: cover;
+  background-position: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins';
+  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  p {
+    margin: 0px;
+    width: 128px;
+    padding: 8px;
+    border-radius: 32px;
+  }
+  h1 {
+    font-size: 128px;
+    line-height: 1;
+    margin: 16px 0px 16px 0px;
+  }
+  a {
+    text-decoration: none;
+    border-width: 1px 4px 4px 1px;
+    min-width: 128px;
+    max-width: 256px;
+    padding: 8px;
+    border-radius: 32px;
+    float: right;
+  }
+} 
 
 .navbar-container {
+  position: absolute;
+  top: 0px;
   width: 100%;
 }
 
-.headline-container {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main-container {
+  width: 880px;
+}
+
+.container-one {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.text-one-container {
+  width: 600px;
 }
 
 .hover-wrapper {
@@ -47,18 +56,6 @@ section {
   overflow: hidden;
 }
 
-.img-container {
-  width: 100%;
-  height: 40px;
-  position: relative;
-}
-  
-.hover-img {
-  height: 40px;
-  opacity: 0;
-  position: absolute;
-}
-  
 .hover-text:hover + .img-container .hover-img {
   opacity: 1;
   animation: roll-across 1s ease forwards;
@@ -122,17 +119,25 @@ section {
 .hover-text:hover::after {
   content: attr(data-hover);
 }
-  
-.width-600 {
-  width: 600px;
-} 
+
+.img-container {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.hover-img {
+  height: 40px;
+  opacity: 0;
+  position: absolute;
+}
 
 .hover-lowercase {
   text-transform: uppercase;
   color: rgb(248, 249, 250);
   transition: color 0.4s ease, transform 0.3s ease;
 }
-  
+
 .hover-lowercase:hover {
   text-transform: lowercase;
   color: rgb(247, 197, 24);
@@ -152,17 +157,17 @@ section {
 .my-photo {
   height: 216px;
   width: 180px;
-  margin-left: 64px;
+  margin-left: 32px;
   object-fit: cover;
   transform: rotate(8deg);
 }
 
-.right {
-  justify-content: end;
+.text-two-container {
+  justify-content: flex-end;
 }
 
-.height-48 {
-  height: 48px;
+.right-button {
+  justify-content: flex-end;
 }
 
 .a-hover:hover {
@@ -171,16 +176,22 @@ section {
   transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.link-container {
-  width: 36px;
-  margin-left: 72px;
-  bottom: 128px;
-  img {
-    border-radius: 100%;
-    padding: 4px;
-  }
+.button-two-container {
+  height: 40px;
 }
-  
+
+.phone-my-photo {
+  display: none;
+}
+
+.my-photo-phone {
+  height: 160px;
+  width: 132px;
+  object-fit: cover;
+  transform: rotate(8deg);
+  margin-bottom: 64px
+}
+
 .social-link:hover {
   background-position: top;
   background: linear-gradient(to top, rgb(51, 85, 255) 50%, transparent 50%);
@@ -192,109 +203,55 @@ section {
   transition: background-position 0.4s ease-out;
 }  
 
-.show {
-  display: none;
+@media screen and (max-width: 1401px) {
+  .main-container {
+    width: 800px;
+  }
 }
 
-.phone-my-photo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.right-button {
-  justify-content: flex-end;
+.hyperlink-container {
+  width: 36px;
+  margin-left: 72px;
+  bottom: 128px;
+  img {
+    border-radius: 100%;
+    padding: 4px;
+  }
 }
 
 @media screen and (max-width: 1001px) {
-  section {
-  h1 {
-    font-size: 64px;
+  .main-container {
+    width: 720px;
   }
-  p {
-    padding: 6px;
-    font-size: 16px;
+  .none {
+    display: none;
   }
-  a {
-    padding: 4px;
-    font-size: 16px;
+  .text-two-container {
+  justify-content: flex-start;
   }
- }
- .width-600 {
-  width: 200px;
- }
- .my-photo {
-  height: 151px;
-  width: 126px;
-  margin-left: 32px;
- }
+  .phone-my-photo {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 801px) {
   section {
-    p {
-      width: 96px;
-      height: 24px;
+    h1 {
+      font-size: 56px;
     }
   }
-  .none {
-  display: none;
+  .main-container {
+    width: 320px;
   }
-  .show {
-    display: block;
+  .text-one-container {
+    width: auto;
   }
-  .none-href {
+  .my-photo-phone {
+    margin-top: 32px;
+  }
+  .hyperlink-container {
     display: none;
-  }
-  .height-48 {
-  height: 40px;
- }
- .responsive {
-  width: 400px;
- } 
-}
-
-@media screen and (max-width: 601px) {
- section {
-  h1 {
-    font-size: 48px;
-  }
-  p {
-    padding: 1px;
-    font-size: 16px;
-    width: 104px;
-  }
-  a {
-    padding: 8px;
-    font-size: 16px;
-    min-width: 116px;
-    border-width: 1px 2px 2px 1px;
-  }
-  }
-  .headline-container {
-    width: 256px;
-  }
-  .hover-wrapper {
-    width: 128px;
-  }
-  .height-48 {
-    height: 32px;
-    width: 270px;
-  }
-  .responsive {
-    width: 256px;
-  } 
-  .hover-text {
-    height: 16px;
-  }
-  .my-photo {
-    height: 120px;
-    width: 100px;
-    margin-left: 0px;
-  }
-  .right {
-    justify-content: flex-start;
   }
 }

@@ -1,57 +1,85 @@
-<section class="white-font">
-    <app-navbar class="navbar-container absolute flex-justyfy-align"></app-navbar>
-    <div class="headline-container display-flex absolute column">           
-        <div class="display-flex">
-            <div>                 
-            <div class="hover-wrapper">
-                <p class="font-size-18 weight-500 flex-justyfy-align white-border hover-text" 
-                [attr.data-text]="'TRANSLATE.HEAD_HELLO' | translate" 
-                [attr.data-hover]="'TRANSLATE.HEAD_NAME' | translate"></p>
-                <div class="img-container">
-                    <img src="assets/headline_img/waving_hand.svg" class="hover-img" alt="Decorative image" />
+<section class="white-font flex-justyfy-align">
+
+    <div class="navbar-container">
+        <app-navbar class="flex-justyfy-align"></app-navbar>
+    </div>
+
+    <div class="main-container">
+
+        <div class="container-one display-flex">
+
+            <div class="text-container">
+
+                <div class="button-one-container">
+                    <div class="hover-wrapper">
+                        <p class="font-size-18 weight-500 flex-justyfy-align white-border hover-text" 
+                        [attr.data-text]="'TRANSLATE.HEAD_HELLO' | translate" 
+                        [attr.data-hover]="'TRANSLATE.HEAD_NAME' | translate"></p>
+                        <div class="img-container">
+                            <img src="assets/headline_img/waving_hand.svg" class="hover-img" alt="Decorative image" />
+                        </div>
+                    </div>
                 </div>
+
+                <div class="text-one-container">
+                    <h1 class="weight-700 margin-0">
+                        <span class="hover-lowercase">F</span>
+                        <span class="hover-uppercase">r</span>
+                        <span class="hover-uppercase">o</span>
+                        <span class="hover-uppercase">n</span>
+                        <span class="hover-uppercase">t</span>
+                        <span class="hover-uppercase">e</span>
+                        <span class="hover-uppercase">n</span>
+                        <span class="hover-uppercase">d</span>
+                    </h1> 
+                </div>
+
             </div>
-            <div class="width-600">
-                <h1 class="weight-700 margin-0">
-                    <span class="hover-lowercase">F</span>
-                    <span class="hover-uppercase">r</span>
-                    <span class="hover-uppercase">o</span>
-                    <span class="hover-uppercase">n</span>
-                    <span class="hover-uppercase">t</span>
-                    <span class="hover-uppercase">e</span>
-                    <span class="hover-uppercase">n</span>
-                    <span class="hover-uppercase">d</span>
-                </h1> 
-            </div>                 
-        </div> 
-            <div>
+
+            <div class="none">
                 <img class="my-photo none" src='assets/headline_img/testphoto.png'>
-            </div>        
-        </div>      
-        <div class="right display-flex responsive">
-            <h1 class="right weight-700 margin-0">
-                <span class="hover-lowercase">D</span>
-                <span class="hover-lowercase">E</span>
-                <span class="hover-lowercase">V</span>
-                <span class="hover-lowercase">E</span>
-                <span class="hover-lowercase">L</span>
-                <span class="hover-lowercase">O</span>
-                <span class="hover-lowercase">P</span>
-                <span class="hover-lowercase">E</span>
-                <span class="hover-lowercase">R</span>
-            </h1>
+            </div>
+
         </div>
-        <div class="right-button display-flex height-48">
-            <a class="white-font font-size-18 weight-500 flex-justyfy-align pointer white-border a-hover"
-            href="#contact">{{ 'TRANSLATE.HEAD_CONTACT' | translate }}</a>
-        </div> 
-        
-        <div class="phone-my-photo">
-            <img class="my-photo show" src='assets/headline_img/testphoto.png'>
+
+        <div class="container-two">
+
+            <div>
+
+                <div class="text-two-container display-flex">
+                    <h1 class="right weight-700 margin-0">
+                        <span class="hover-lowercase">D</span>
+                        <span class="hover-lowercase">E</span>
+                        <span class="hover-lowercase">V</span>
+                        <span class="hover-lowercase">E</span>
+                        <span class="hover-lowercase">L</span>
+                        <span class="hover-lowercase">O</span>
+                        <span class="hover-lowercase">P</span>
+                        <span class="hover-lowercase">E</span>
+                        <span class="hover-lowercase">R</span>
+                    </h1>
+                </div> 
+
+                <div class="button-two-container">
+                    <div class="right-button display-flex height-48">
+                        <a class="white-font font-size-18 weight-500 flex-justyfy-align pointer white-border a-hover"
+                        href="#contact">{{ 'TRANSLATE.HEAD_CONTACT' | translate }}</a>
+                    </div> 
+                </div>
+
+            </div>
+
+            <div class="phone-my-photo">
+                <img class="my-photo-phone" src='assets/headline_img/testphoto.png'>
+            </div>
+
         </div>
 
     </div>
-    <div class="link-container display-flex absolute column none-href">
+
+</section>
+
+<div class="hyperlink-container display-flex absolute column none-href">
         <a href="https://www.linkedin.com/in/davor-jezernik-a69515261/">
             <img class="pointer white-border social-link" src='assets/headline_img/linkedin.svg'>
         </a>
@@ -61,10 +89,4 @@
         <a href="">
             <img class="pointer white-border social-link" src='assets/headline_img/mail.svg'>
         </a>
-    </div>       
-</section>
-
-
-
-
-
+</div>
