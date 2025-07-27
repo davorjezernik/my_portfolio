@@ -12,6 +12,9 @@ section {
 .main-container {
   width: 1200px;
   height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-one {
@@ -42,7 +45,6 @@ section {
 
 .h1-decoration {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
@@ -208,13 +210,9 @@ section {
   }
 }
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 1201px) {
   .main-container {
-    height: 100%;
-  }
-  .container-text {
-    width: 100%;
-    justify-content: flex-end ;
+    height: 80%;
   }
   .img-txt {
     img {
@@ -223,8 +221,24 @@ section {
   }
 }
 
+@media screen and (max-width: 801px) {
+  .main-container {
+    height: 90%;
+  }
+  .container-text {
+    width: 100%;
+    justify-content: flex-end ;
+  }
+  .h1-decoration {
+    justify-content: flex-end;
+  }
+}
+
 @media screen and (max-width: 601px) {
   section {
     height: 1200px;
+  }
+  .main-container {
+    justify-content: flex-start;
   }
 }

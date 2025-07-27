@@ -190,7 +190,7 @@ section {
     }
   }
   .text-container {
-    height: 400px;
+    height: 100%;
   }
   .image-wrapper {
     width: 100%;
@@ -198,8 +198,8 @@ section {
     display: flex;
     justify-content: center;
   }
-  .text-wraper {
-    height: 400px;
+  .touch-button-container {
+    margin: 32px 0px 32px 0px;
   }
 }
 
@@ -212,5 +212,7 @@ section {
 }
 
 @media screen and (max-width: 601px) {
-
+  .image-wrapper {
+    height: 200px;
+  }
 }

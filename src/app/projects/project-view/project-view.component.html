@@ -31,14 +31,14 @@
                     <div class="set-width">
                         <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT1' | translate }}</p>
                         <span class="font-size-18 weight-400">
-                            {{ selectedProject?.description }}
+                            {{ selectedProject?.description || '' | translate }}
                         </span>
                     </div>
                 </div>
                 <div class="set-width">
                     <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT2' | translate }}</p>
                     <span class="font-size-18 weight-400">
-                        {{ selectedProject?.details }}
+                        {{ selectedProject?.details || '' | translate }}
                     </span>
                 </div>
                 <div class="set-width">
@@ -94,10 +94,12 @@
                 <a class="font-size-18 weight-700 white-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
             </div>
             <div class="button-next display-flex">
-                <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
-                <a class="display-flex" (click)="goToNextProject()">
-                    <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
-                </a>
+                <div class="hover-next-container display-flex">
+                    <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
+                    <a class="display-flex" (click)="goToNextProject()">
+                        <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
+                    </a>
+                </div>
             </div>
         </div>
  

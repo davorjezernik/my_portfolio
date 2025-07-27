@@ -1,8 +1,10 @@
+type TranslationKey = string;
+
 export interface TemplateItem {
     id: string;
     name: string;
-    description: string;
-    details: string;
+    description: TranslationKey;
+    details: TranslationKey;
     weeks: string;
     githubUrl: string;
     liveUrl: string;
@@ -12,8 +14,8 @@ export const templateLayout: TemplateItem[] = [
     {
         id: 'join',
         name: 'Join',
-        description: 'Task manager inspired by the Kanban System...',
-        details: 'Short text that describes your role...',
+        description: 'TRANSLATE.P_VIEW_JOIN_DESC',
+        details: 'TRANSLATE.P_VIEW_JOIN_DETAILS',
         weeks: '8',
         githubUrl: 'https://github.com/davorjezernik/Join',
         liveUrl: 'https://github.com/davorjezernik'
@@ -21,8 +23,8 @@ export const templateLayout: TemplateItem[] = [
     {
         id: 'pollo',
         name: 'El Pollo Loco',
-        description: 'Jump, run and throw game...',
-        details: 'Short text that describes your role...',
+        description: 'TRANSLATE.P_VIEW_POLLO_DESC',
+        details: 'TRANSLATE.P_VIEW_POLLO_DETAILS',
         weeks: '5',
         githubUrl: 'https://github.com/davorjezernik/elPolloLoco',
         liveUrl: 'https://github.com/davorjezernik'
@@ -30,8 +32,8 @@ export const templateLayout: TemplateItem[] = [
     {
         id: 'bubble',
         name: 'DABubble',
-        description: 'This App is a Slack Clone App...',
-        details: 'Work in progress...',
+        description: 'TRANSLATE.P_VIEW_BUBBLE_DESC',
+        details: 'TRANSLATE.P_VIEW_BUBBLE_DETAILS',
         weeks: 'N/A',
         githubUrl: 'https://github.com/davorjezernik',
         liveUrl: 'https://github.com/davorjezernik'

@@ -24,7 +24,7 @@
 
         "PROJECTS_CRAFT": "MEIN HANDWERK",
         "PROJECTS_AOT": "Projekte",
-        "PROJECTS_TEXT": "Text",
+        "PROJECTS_TEXT": "Hier sind einige der Projekte, die ich während meiner Ausbildung entwickelt habe. Sie zeigen, wie ich mein Wissen angewendet habe, um responsive, benutzerfreundliche Lösungen mit sauberem und effizientem Code zu erstellen. Schauen Sie sich die Projekte gerne an und probieren Sie sie aus – sie spiegeln sowohl meine technischen Fähigkeiten als auch meine Leidenschaft für durchdachte, funktionale Anwendungen wider.",
         "PROJECTS_BUTTON": "Projektdetails",
         "PROJECTS_JOIN": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
         "PROJECTS_POLLO": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Sauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
@@ -50,6 +50,10 @@
         "WORK_ACCEPT3": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
         "WORK_SEND": "Senden",
 
+        "WORK_P_NAME" : "-Bitte einen Namen eingeben",
+        "WORK_P_EMAIL" : "-Bitte eine E-Mail eingeben",
+        "WORK_P_MASSAGE" : "-Bitte eine Nachricht eingeben",
+
         "LEGAL_NOTICE": "Impressum",
 
         "P_VIEW_TEXT1": "Beschreibung",
@@ -74,6 +78,15 @@
         "LN_PN_TEXT": "Es wird darauf hingewiesen, welche Daten erhoben werden (z. B. Name, E-Mail, IP-Adresse), warum sie erhoben werden (z. B. Kontaktaufnahme, Analyse), wie sie gespeichert werden und ob sie weitergegeben werden.",
         "LN_C": "Cookies",
         "LN_C_TEXT": "Falls zutreffend",
-        "LN_BACK": "ZURÜCK"
+        "LN_BACK": "ZURÜCK",
+
+        "P_VIEW_JOIN_DESC": "Diese App ist ein Join-Klon mit Login, Aufgabenverwaltung und Teamarbeit – basierend auf dem Original.",
+        "P_VIEW_JOIN_DETAILS": "Ich habe beim Nachbauen des Designs geholfen, JS-Code geschrieben und Firebase gelernt.",
+
+        "P_VIEW_POLLO_DESC": "Begleite Pepe auf ein actiongeladenes Abenteuer in einem objektorientierten Spiel!",
+        "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen.",
+
+        "P_VIEW_BUBBLE_DESC": "Diese App ist ein Slack-Klon mit Echtzeitnachrichten und intuitivem UI für Teamarbeit.",
+        "P_VIEW_BUBBLE_DETAILS": "In Arbeit..."
     }
 }

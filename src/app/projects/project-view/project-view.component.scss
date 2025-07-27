@@ -47,8 +47,20 @@ section {
     .back-hover {
         transition: color 0.2s ease, filter 0.2s ease;
     }
-
 }
+
+.hover-next-container {
+    gap: 8px;
+    align-items: center;
+    &:hover .next-hover {
+        color: rgb(242, 193, 24); 
+    }
+    .next-hover {
+        transition: color 0.2s ease, filter 0.2s ease;
+    }
+}
+
+
 
 .background-img {
     height: 100%;
@@ -58,7 +70,7 @@ section {
 
 .content-container {
     width: 1200px;
-    height: 516px;
+    height: 65%;
     justify-content: space-between;
     align-items: center;
 }
@@ -134,7 +146,6 @@ section {
 }
 
 .button-back {
-    width: 104px;
     align-items: center;
     gap: 8px;
     a {
@@ -143,7 +154,6 @@ section {
 }
 
 .button-next {
-    width: 192px;
     align-items: center;
     gap: 8px;
     a {
@@ -188,7 +198,7 @@ section {
 
 @media screen and (max-width: 1401px) {
     .content-container {
-        height: 60%;
+        height: 50%;
         width: 100%;
     }
     .go-back {
@@ -211,6 +221,10 @@ section {
     }
     .main-container {
         background-image: none;
+    }
+    .container-one-inner {
+        margin-top: 96px;
+        margin-bottom: 128px;
     }
     .remove-button {
         display: none;

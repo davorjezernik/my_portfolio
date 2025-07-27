@@ -16,25 +16,49 @@
             </div>
 
             <div class="container-two display-flex">
-                <form> 
+                <form #contactForm="ngForm"> 
                     <div class="hover-form">
                         <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_NAME' | translate }}</p>
-                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER1' | translate }}" type="text">
+
+                        <input name="name" required #name="ngModel" minlength="3"
+                        [(ngModel)]="contactData.name" class="input-info white-font font-size-18" id="name"
+                        placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER1' | translate }}" type="text">
+                        @if (!name.valid && name.touched) {
+                           <span class="form-warning">{{ 'TRANSLATE.WORK_P_NAME' | translate }}</span> 
+                        }
+                        
                         <div class="yellow-line"></div>
                     </div>                
                     <div class="hover-form">
                         <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_EMAIL' | translate }}</p>
-                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER2' | translate }}" type="text">
+
+                        <input name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        [(ngModel)]="contactData.email" class="input-info white-font font-size-18" id="email"
+                        placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER2' | translate }}" type="email" #mail="ngModel">
+                        @if (!mail.valid && mail.touched) {
+                           <span class="form-warning">{{ 'TRANSLATE.WORK_P_EMAIL' | translate }}</span> 
+                        }
+
                         <div class="yellow-line"></div>
                     </div>
                     <div class="hover-form">
                         <p class="font-size-24 weight-500">{{ 'TRANSLATE.WORK_HELP' | translate }}</p>
-                        <input class="input-info white-font font-size-18" placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER3' | translate }}" type="text">
+
+                        <input name="message" required #message="ngModel" minlength="4"
+                        [(ngModel)]="contactData.message" class="input-info white-font font-size-18" id="message"
+                        placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER3' | translate }}" type="text">
+                        @if (!message.valid && message.touched) {
+                           <span class="form-warning">{{ 'TRANSLATE.WORK_P_MASSAGE' | translate }}</span> 
+                        }
+
                         <div class="yellow-line"></div>
                     </div>
                     <div class="agreement-container display-flex column">
                         <div class="disply-flex display-flex">
-                            <input class="checkbox pointer" type="checkbox">
+
+                            <input name="acceptTerms" [(ngModel)]="contactData.acceptTerms" 
+                            required class="checkbox pointer" type="checkbox">
+
                             <div>
                                 <span class="weight-400">
                                     {{ 'TRANSLATE.WORK_ACCEPT1' | translate }} <a href="privacypolicy">{{ 'TRANSLATE.WORK_ACCEPT2' | translate }}</a> 
@@ -49,7 +73,9 @@
                                 </div>
                             </div>
                             <div class="sent-button flex-justyfy-align">
-                                <a class="font-size-18 weight-500 pointer">{{ 'TRANSLATE.WORK_SEND' | translate }}</a>
+                                <a (click)="submitForm(contactForm)"
+                                class="font-size-18 weight-500 pointer">
+                                {{ 'TRANSLATE.WORK_SEND' | translate }}</a>
                             </div>
                         </div>
                     </div>                   
