@@ -30,16 +30,20 @@
                     </div>
                     <div class="set-width">
                         <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT1' | translate }}</p>
-                        <span class="font-size-18 weight-400">
-                            {{ selectedProject?.description || '' | translate }}
-                        </span>
+                        <ng-container *ngIf="selectedProject as project">
+                            <span class="font-size-18 weight-400">
+                            {{ project.description | translate }}
+                            </span>
+                        </ng-container>
                     </div>
                 </div>
                 <div class="set-width">
                     <p class="font-size-24 weight-700">{{ 'TRANSLATE.P_VIEW_TEXT2' | translate }}</p>
-                    <span class="font-size-18 weight-400">
-                        {{ selectedProject?.details || '' | translate }}
-                    </span>
+                    <ng-container *ngIf="selectedProject as project">
+                        <span class="font-size-18 weight-400">
+                        {{ project.details | translate }}
+                        </span>
+                    </ng-container>
                 </div>
                 <div class="set-width">
                     <div class="margin-16">

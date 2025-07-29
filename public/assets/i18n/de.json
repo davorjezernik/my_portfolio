@@ -53,6 +53,7 @@
         "WORK_P_NAME" : "-Bitte einen Namen eingeben",
         "WORK_P_EMAIL" : "-Bitte eine E-Mail eingeben",
         "WORK_P_MASSAGE" : "-Bitte eine Nachricht eingeben",
+        "WORK_W_MASSAGE": "-Bitte füllen Sie alle Pflichtfelder aus und akzeptieren Sie die Datenschutzerklärung.",
 
         "LEGAL_NOTICE": "Impressum",
 

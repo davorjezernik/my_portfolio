@@ -156,6 +156,8 @@ section {
     border-radius: 32px;
     a {
         color: rgb(125, 125, 125);
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -169,10 +171,16 @@ section {
     right: 0px;
     transform: rotate(180deg);
     width: 100%;
+    z-index: -1;
 }
 
 .form-warning {
     color: rgb(228, 39, 39);
+}
+
+.submit-warning {
+    height: 24px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1301px) {

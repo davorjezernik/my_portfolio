@@ -54,7 +54,7 @@
                         <div class="yellow-line"></div>
                     </div>
                     <div class="agreement-container display-flex column">
-                        <div class="disply-flex display-flex">
+                        <div class="display-flex">
 
                             <input name="acceptTerms" [(ngModel)]="contactData.acceptTerms" 
                             required class="checkbox pointer" type="checkbox">
@@ -72,10 +72,17 @@
                                     <img src="assets/ready_to_work_img/yellow_arrwo.svg">
                                 </div>
                             </div>
-                            <div class="sent-button flex-justyfy-align">
+                            
+                            <div class="sent-button">
                                 <a (click)="submitForm(contactForm)"
-                                class="font-size-18 weight-500 pointer">
+                                class="flex-justyfy-align font-size-18 weight-500 pointer">
                                 {{ 'TRANSLATE.WORK_SEND' | translate }}</a>
+                            </div>
+                            
+                        </div>
+                        <div class="submit-warning ">
+                            <div *ngIf="formSubmitted && !contactForm.valid" class="form-warning">
+                            <span>{{ 'TRANSLATE.WORK_W_MASSAGE' | translate }}</span>
                             </div>
                         </div>
                     </div>                   
