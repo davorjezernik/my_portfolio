@@ -85,9 +85,6 @@
         "P_VIEW_JOIN_DETAILS": "Ich habe beim Nachbauen des Designs geholfen, JS-Code geschrieben und Firebase gelernt.",
 
         "P_VIEW_POLLO_DESC": "Begleite Pepe auf ein actiongeladenes Abenteuer in einem objektorientierten Spiel!",
-        "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen.",
-
-        "P_VIEW_BUBBLE_DESC": "Diese App ist ein Slack-Klon mit Echtzeitnachrichten und intuitivem UI für Teamarbeit.",
-        "P_VIEW_BUBBLE_DETAILS": "In Arbeit..."
+        "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen."
     }
 }

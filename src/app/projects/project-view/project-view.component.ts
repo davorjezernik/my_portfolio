@@ -48,10 +48,6 @@ export class ProjectViewComponent implements OnChanges {
         { icon: 'assets/skill_set_img/front_end/css.svg', label: 'CSS' },
         { icon: 'assets/skill_set_img/front_end/javascript.svg', label: 'JavaScript' },
       ];
-    case 'bubble':
-      return [
-        { icon: '', label: 'In progress...' },
-      ];
     default:
       return [];
     }

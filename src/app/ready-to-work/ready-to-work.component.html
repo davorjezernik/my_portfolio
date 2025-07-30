@@ -73,10 +73,12 @@
                                 </div>
                             </div>
                             
-                            <div class="sent-button">
+                            <div class="before-send" 
+                                [class.send-active]="contactForm.valid && contactData.acceptTerms">
                                 <a (click)="submitForm(contactForm)"
-                                class="flex-justyfy-align font-size-18 weight-500 pointer">
-                                {{ 'TRANSLATE.WORK_SEND' | translate }}</a>
+                                    class="sent-button flex-justyfy-align font-size-18 weight-500 pointer">
+                                    {{ 'TRANSLATE.WORK_SEND' | translate }}
+                                </a>
                             </div>
                             
                         </div>

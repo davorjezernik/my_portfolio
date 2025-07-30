@@ -29,13 +29,4 @@ export const templateLayout: TemplateItem[] = [
         githubUrl: 'https://github.com/davorjezernik/elPolloLoco',
         liveUrl: 'https://github.com/davorjezernik'
     },
-    {
-        id: 'bubble',
-        name: 'DABubble',
-        description: 'TRANSLATE.P_VIEW_BUBBLE_DESC',
-        details: 'TRANSLATE.P_VIEW_BUBBLE_DETAILS',
-        weeks: 'N/A',
-        githubUrl: 'https://github.com/davorjezernik',
-        liveUrl: 'https://github.com/davorjezernik'
-    }
 ];

@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="container-two display-flex">
+        <div class="container-two flex-justyfy-align">
             <div class="project-container">
                 <div class="image-wrapper">
                     <img class="img-height pointer" src="assets/project_view_img/pollo.svg">
@@ -43,21 +43,6 @@
                         <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'pollo']" id="pollo">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
                     </div>  
                 </div>     
-            </div>
-            <div class="project-container">
-                <div class="image-wrapper">
-                    <img class="img-height pointer" src="assets/project_view_img/bubble.svg">
-                    <a #templateRefBubble class="hover-link a-hover none-mobile" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-                </div>
-                <div class="text-wraper">
-                        <h3 class="font-size-24 weight-700">DABubble</h3>
-                    <p class="font-size-18 weight-400">
-                        {{ 'TRANSLATE.PROJECTS_BUBBLE' | translate }}
-                    </p>
-                    <div class="touch-button-container">
-                        <a class="touch-button font-size-16 weight-500 none" [routerLink]="['/project-view', 'bubble']" id="bubble">{{ 'TRANSLATE.PROJECTS_BUTTON' | translate }}</a>
-                    </div>
-                </div>  
             </div>
         </div>
 
