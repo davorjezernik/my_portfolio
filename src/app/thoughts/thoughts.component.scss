@@ -148,6 +148,13 @@ section {
     .absolute {
         position: static;
     }
+    .container-one {
+        height: 440px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0px;
+    }
     .container-two {
         position: static;
         display: flex;
@@ -180,9 +187,6 @@ section {
 }
 
 @media screen and (max-width: 601px) {
-    .container-one {
-        height: 100%;
-    }
     .flex-end-mobile {
         justify-content: flex-end;
     }

@@ -1,13 +1,11 @@
 section {
-    background-image: url('./../../../../public/assets/ready_to_work_img/background_rtw.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    height: 100vh;
+    height: auto;
     width: 100%;
     font-family: 'Poppins';
-    color: white;
-    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
     p {
         margin: 0px;
     }
@@ -19,35 +17,69 @@ section {
     }
 }
 
-.navbar-container {
-  width: 100%;
+.container-one {
+    background-image: url('./../../../../public/assets/headline_img/background.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 100% 100%;
 }
 
-:host ::ng-deep .none {
-    display: none; 
+.navbar-container {
+    width: 100%;
+    position: absolute;
+    top: 0px;
 }
 
 :host ::ng-deep .legal-privacy {
     width: 100% !important; 
     height: 80px !important;
-    justify-content: flex-end !important;
 }
 
 :host ::ng-deep app-navbar  {
-    width: 99% !important;
+    width: 100% !important;
+}
+
+:host ::ng-deep .white-font  {
+    text-shadow: 1px 1px 1px black; 
+}
+
+.aot {
+    height: 100%;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.aot-container-one {
+    width: 45%;
+}
+
+.aot-container-two {
+    width: 45%;
 }
 
 .main-container  {
-    justify-content: space-between;
-    width: 1300px;
+    width: 100%;
+    height: 1440px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-container {
+    align-items: center;
+    width: 90%;
 }
 
 .content-container-one {
-    width: 512px;
+    width: 50%;
 }
 
 .content-container-two {
-    width: 512px;
+    width: 50%;
+}
+
+.button-height {
+    height: 40px;
 }
 
 .a-hover {
@@ -58,11 +90,78 @@ section {
     max-width: 256px;
     padding: 8px;
     border-radius: 32px;
+    border-color: black;
 }
 
 .a-hover:hover {
   border-width: 1px;
   background-color: rgb(248, 122, 85);
   transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+} 
+
+:host ::ng-deep footer {
+    background-image: url('./../../../../public/assets/ready_to_work_img/background_rtw.png');
+    transform: rotate(180deg);
+    background-position: 100% 100%;
+    height: 264px !important;
+    align-items: flex-start !important;
+    padding-top: 32px;
+}
+
+:host ::ng-deep .main-container-footer {
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 801px) {
+    .aot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aot-container-one {
+        width: 90%;
+        height: 55%;
+    }
+    .aot-container-two {
+        width: 90%;
+        height: 55%;
+    }
+    .main-container {
+        height: 1920px;
+    }
+    :host ::ng-deep footer {
+        height: 320px !important;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .content-container {
+        width: 90%;
+    }
+    .content-container-one {
+        width: 100%;
+    }
+    .content-container-two {
+        width: 100%;
+    }
+    .font-size-24 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .font-size-64 {
+        font-size: 40px;
+    }
+    .small-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

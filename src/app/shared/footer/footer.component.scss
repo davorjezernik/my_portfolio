@@ -6,7 +6,7 @@ footer {
   justify-content: center;
 }
 
-.main-container {
+.main-container-footer {
   width: 90%;
   display: flex;
   align-items: flex-end;
@@ -125,11 +125,31 @@ footer {
 }
 
 @media screen and (max-width: 801px) {
-  .main-container {
+  .main-container-footer {
     flex-direction: column;
   }
   .container-one,
   .container-two {
     width: 100%;
+  }
+  .container-one {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .text-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end; 
+    flex-direction: column;
+    p {
+      margin: 0px;
+    }
   }
 }

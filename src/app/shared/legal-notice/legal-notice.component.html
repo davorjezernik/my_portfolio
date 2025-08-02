@@ -1,23 +1,25 @@
-<section>
+<section >
 
-    <app-navbar class="navbar-container absolute flex-justyfy-align"></app-navbar>
+    <div class="container-one flex-justyfy-align">
+        <app-navbar class="navbar-container absolute flex-justyfy-align"></app-navbar>
+
+        <div class="aot white-font display-flex"> 
+            <div class="aot-container-one flex-justyfy-align">
+                <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.LN_AOT' | translate }}</h1> 
+            </div>
+            <div class="aot-container-two flex-justyfy-align column">
+                <p class="small-screen font-size-24 weight-700">{{ 'TRANSLATE.LN_NAME' | translate }}:<span class="font-size-24 weight-400"> Davor Jezernik</span></p>
+                <p class="small-screen font-size-24 weight-700">{{ 'TRANSLATE.LN_ADRESS' | translate }}:<span class="font-size-24 weight-400"> Schönaugürtel 7, 8010 Graz</span></p>
+                <p class="small-screen font-size-24 weight-700">{{ 'TRANSLATE.LN_EMAIL' | translate }}:<span class="font-size-24 weight-400"> mail</span></p>
+                <p class="small-screen font-size-24 weight-700">{{ 'TRANSLATE.LN_PHONE' | translate }}:<span class="font-size-24 weight-400"> +436642349457</span></p>
+            </div>
+        </div>
+    </div>
     
 
-    <div class="flex-justyfy-align column">
-        <div>
-            <h1 class="font-size-64 weight-700">{{ 'TRANSLATE.LN_AOT' | translate }}</h1> 
-        </div>
-
-        <div></div>
-
-        <div class="main-container display-flex">
+    <div class="main-container display-flex column">
+        <div class="content-container display-flex column">
             <div class="content-container-one display-flex column">
-                <div>
-                    <p class="font-size-18 weight-700">{{ 'TRANSLATE.LN_NAME' | translate }}:<span class="font-size-18 weight-400"> Davor Jezernik</span></p>
-                    <p class="font-size-18 weight-700">{{ 'TRANSLATE.LN_ADRESS' | translate }}:<span class="font-size-18 weight-400"> adresa</span></p>
-                    <p class="font-size-18 weight-700">{{ 'TRANSLATE.LN_EMAIL' | translate }}:<span class="font-size-18 weight-400"> mail</span></p>
-                    <p class="font-size-18 weight-700">{{ 'TRANSLATE.LN_PHONE' | translate }}:<span class="font-size-18 weight-400"> telefon</span></p>
-                </div>
                 <div>
                     <h2 class="font-size-24 weight-700">{{ 'TRANSLATE.LN_CN' | translate }}</h2>
                     <p class="font-size-18 weight-400">{{ 'TRANSLATE.LN_CN_TEXT' | translate }}</p>
@@ -42,9 +44,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a class="white-font font-size-18 weight-500 flex-justyfy-align pointer white-border a-hover" href="#contact">{{ 'TRANSLATE.LN_BACK' | translate }}</a>
+        <div class="button-height">
+            <a class="black-font font-size-18 weight-500 flex-justyfy-align pointer white-border a-hover" href="#contact">{{ 'TRANSLATE.LN_BACK' | translate }}</a>
         </div>
+    </div>
+
+    <div class="footer-container">
+        <app-footer></app-footer>
     </div>
 
 </section>

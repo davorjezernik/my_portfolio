@@ -177,7 +177,6 @@ section {
     right: 0px;
     transform: rotate(180deg);
     width: 100%;
-    z-index: -1;
 }
 
 .form-warning {
@@ -217,7 +216,7 @@ section {
 
 @media screen and (max-width: 801px) {
     section {
-        height: 1560px;
+        height: 1920px;
     }
     .content-container {
         flex-direction: column;
@@ -225,7 +224,8 @@ section {
     .container-one,
     .container-two {
         width: 100%;
-        height: 600px;
+        height: 700px;
+        align-items: flex-start;
     }
     .container-two {
         align-items: baseline;
