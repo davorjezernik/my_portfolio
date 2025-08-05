@@ -23,9 +23,11 @@
                         <input name="name" required #name="ngModel" minlength="3"
                         [(ngModel)]="contactData.name" class="input-info white-font font-size-18" id="name"
                         placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER1' | translate }}" type="text">
-                        @if (!name.valid && name.touched) {
+                        <div class="form-warning-container">
+                            @if (!name.valid && name.touched) {
                            <span class="form-warning">{{ 'TRANSLATE.WORK_P_NAME' | translate }}</span> 
-                        }
+                            }
+                        </div>
                         
                         <div class="yellow-line"></div>
                     </div>                
@@ -35,9 +37,11 @@
                         <input name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                         [(ngModel)]="contactData.email" class="input-info white-font font-size-18" id="email"
                         placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER2' | translate }}" type="email" #mail="ngModel">
-                        @if (!mail.valid && mail.touched) {
+                        <div class="form-warning-container">
+                            @if (!mail.valid && mail.touched) {
                            <span class="form-warning">{{ 'TRANSLATE.WORK_P_EMAIL' | translate }}</span> 
-                        }
+                            }
+                        </div>
 
                         <div class="yellow-line"></div>
                     </div>
@@ -47,9 +51,11 @@
                         <input name="message" required #message="ngModel" minlength="4"
                         [(ngModel)]="contactData.message" class="input-info white-font font-size-18" id="message"
                         placeholder="{{ 'TRANSLATE.WORK_PLACEHOLDER3' | translate }}" type="text">
-                        @if (!message.valid && message.touched) {
+                        <div class="form-warning-container">
+                            @if (!message.valid && message.touched) {
                            <span class="form-warning">{{ 'TRANSLATE.WORK_P_MASSAGE' | translate }}</span> 
-                        }
+                            }
+                        </div>
 
                         <div class="yellow-line"></div>
                     </div>
