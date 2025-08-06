@@ -49,22 +49,22 @@ footer {
   width: 32px;
   height: 32px;
   transform: translateX(0) rotate(0deg);
-  transition: opacity 0.3s ease, transform 0.6s ease;
+  transition: opacity 125ms ease, transform 125ms ease;
 }
 
 .link-container a:hover + div img.move-1 {
   opacity: 1;
-  animation: spin-slide-left-1 0.6s ease forwards;
+  animation: spin-slide-left-1 125ms ease forwards;
 }
 
 .link-container a:hover + div img.move-2 {
   opacity: 1;
-  animation: spin-slide-left-2 0.6s ease forwards;
+  animation: spin-slide-left-2 125ms ease forwards;
 }
 
 .link-container a:hover + div img.move-3 {
   opacity: 1;
-  animation: spin-slide-left-3 0.6s ease forwards;
+  animation: spin-slide-left-3 125ms ease forwards;
 }
 
 .link-container a:hover + div img.move-1 {
@@ -95,7 +95,7 @@ footer {
   width: 112px;
   opacity: 0;
   clip-path: inset(0 100% 0 0);
-  transition: opacity 0.5s ease, clip-path 0.5s ease;
+  transition: opacity 125ms ease, clip-path 125ms ease;
   pointer-events: none;
 }
 
@@ -116,7 +116,7 @@ footer {
   background-size: 100% 0%;
   background-repeat: no-repeat;
   background-position: bottom;
-  transition: background-size 0.3s ease;
+  transition: background-size 125ms ease;
   color: white;
 }
 

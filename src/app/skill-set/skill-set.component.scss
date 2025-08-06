@@ -104,19 +104,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   img {
     filter: grayscale(100%);
     height: 72px;
     width: 72px;
-    transition: filter 0.5s ease, transform 0.5s;
+    transition: filter 75ms ease, transform 0.5s;
   }
-
   &:hover img {
     filter: grayscale(0%);
     transform: scale(0.8);
   }
-
   p {
     margin-top: 8px;
     font-size: 16px;
@@ -124,12 +121,10 @@ section {
   }
 }
 
-
 .peel-off-container {
   position: relative;
   height: 200px;
   width: 200px;
-
   .img1,
   .img1-text,
   .img2,
@@ -142,47 +137,37 @@ section {
     transform: rotate(8deg);
     transition: opacity 0.5s ease-in-out;
   }
-
   .img3 {
     z-index: -1;
     opacity: 1;
   }
-
   .img2 {
     z-index: 1;
     opacity: 0;
-
     &.show { opacity: 1; }
     &.hide { opacity: 0; }
   }
-
   .img1 {
     z-index: 2;
     cursor: pointer;
     &.hide { opacity: 0; }
   }
-
   .img1-text {
     z-index: 3;
     width: 200px;
     height: 200px;
-
     &.hide { opacity: 0; }
   }
-
   .arrow-img {
     width: 50px;
     height: 40px;
   }
-
   .layer-zero {
     width: 180px;
-
     p {
       margin: 0;
     }
   }
-
   .img-text-learn {
     margin: 8px;
   }
@@ -228,6 +213,9 @@ section {
   .container-text {
     width: 100%;
     justify-content: flex-end ;
+  }
+  .text-container {
+    margin-bottom: 0px;
   }
   .h1-decoration {
     justify-content: flex-end;

@@ -17,7 +17,6 @@ section {
   height: 680px;
 }
 
-
 .text-container {
   width: 45%;
   justify-content: center;
@@ -133,14 +132,14 @@ section {
   border-radius: 32px;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 75ms ease, transform 75ms ease;
   z-index: 2; 
 }
 
 .a-hover:hover {
   border-width: 1px;
   background-color: rgb(248, 122, 85);
-  transition: border-width 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  transition: border-width 75ms ease, border-color 75ms ease, background-color 75ms ease;
 }
 
 .touch-button-container {

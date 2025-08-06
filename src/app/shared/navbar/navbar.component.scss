@@ -12,12 +12,11 @@ nav {
   }
 }
 
-
 .circle-container {
   position: absolute;
   top: 16px;
   clip-path: inset(0 0 100% 0); 
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     width: 128px;
@@ -33,7 +32,7 @@ nav {
   position: absolute;
   top: 20px;
   clip-path: inset(0 100% 0 0); 
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     width: 128px;
@@ -48,7 +47,7 @@ nav {
   position: absolute;
   top: 22px;
   clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     width: 128px;
@@ -63,7 +62,7 @@ nav {
   position: absolute;
   top: 32px;
   clip-path: inset(0 100% 0 0); 
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     width: 128px;
@@ -79,7 +78,7 @@ nav {
   transform: rotate(180deg); 
   top: 16px;
   clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%); 
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     height: 32px;
@@ -94,7 +93,7 @@ nav {
   position: absolute;
   top: 24px;
   clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%); 
-  transition: clip-path 0.5s ease;
+  transition: clip-path 125ms ease;
   pointer-events: none;
   img {
     height: 32px;
@@ -147,9 +146,6 @@ nav {
   height: 8px;
   border-radius: 5px;
 }
-
-
-
 
 .show {
   display: none;
@@ -242,7 +238,6 @@ nav {
   .none {
     display: none;
   }
-  
   .show {
     display: block;
     width: 100%;
