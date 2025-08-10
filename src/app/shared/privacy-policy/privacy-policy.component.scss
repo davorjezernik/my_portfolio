@@ -20,11 +20,12 @@ section {
     width: 100%;
     background-size: cover;
     background-position: 100% 100%;
-    
+    text-align: center;
 }
 
 .inner-container {
     width: 90%;
+    word-break: break-all;
 }
 
 .container-two {
@@ -92,6 +93,6 @@ section {
         font-size: 40px;
     }
     .container-two {
-        height: 2240px;
+        height: 2480px;
     }
 }
