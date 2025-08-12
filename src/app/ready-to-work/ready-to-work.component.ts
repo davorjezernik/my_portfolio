@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { NgIf } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-ready-to-work',
@@ -12,6 +13,8 @@ import { NgIf } from '@angular/common';
   styleUrl: './ready-to-work.component.scss'
 })
 export class ReadyToWorkComponent {
+  
+  http = inject(HttpClient)
 
   contactData = {
     name: "",
@@ -22,17 +25,44 @@ export class ReadyToWorkComponent {
 
   formSubmitted = false;
 
+  mailTest = true;
+
   submitForm(form: NgForm) {
     this.formSubmitted = true;
-
     if (form.valid) {
-      this.onSubmit();
+      this.onSubmit(form);
     } else {
       console.warn('Form is invalid');
     }
   }
 
-  onSubmit() {
-    console.log('Form submitted:', this.contactData);
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+    }
   }
 }
