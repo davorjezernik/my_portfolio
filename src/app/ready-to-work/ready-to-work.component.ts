@@ -27,6 +27,8 @@ export class ReadyToWorkComponent {
 
   mailTest = true;
 
+  emailSent = false;
+
   submitForm(form: NgForm) {
     this.formSubmitted = true;
     if (form.valid) {
@@ -37,7 +39,7 @@ export class ReadyToWorkComponent {
   }
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'http://davorjezernik.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -52,8 +54,7 @@ export class ReadyToWorkComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
-            ngForm.resetForm();
+            this.resetFormData(ngForm);
           },
           error: (error) => {
             console.error(error);
@@ -61,8 +62,26 @@ export class ReadyToWorkComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
+      this.resetFormData(ngForm);
     }
   }
+
+  private showEmailSentPopup() {
+    this.emailSent = true;
+    setTimeout(() => {
+      this.emailSent = false;
+    }, 3000); 
+  }
+
+  private resetFormData(ngForm: NgForm) {
+  ngForm.resetForm(); 
+  this.contactData = {  
+    name: '',
+    email: '',
+    message: '',
+    acceptTerms: false
+  };
+  this.formSubmitted = false; 
+  this.showEmailSentPopup();
+}
 }

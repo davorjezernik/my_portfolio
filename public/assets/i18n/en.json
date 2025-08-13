@@ -55,6 +55,7 @@
         "WORK_P_EMAIL" : "-Pleas enter a E-mail",
         "WORK_P_MASSAGE" : "-Pleas enter a message",
         "WORK_W_MASSAGE" : "-Please fill out all required fields and accept privacy policy.",
+        "WORK_MAIL_SENT" : "E-mail sent",
 
         "LEGAL_NOTICE": "Legal Notice",
 
