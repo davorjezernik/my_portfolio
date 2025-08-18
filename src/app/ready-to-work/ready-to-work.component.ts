@@ -25,7 +25,7 @@ export class ReadyToWorkComponent {
 
   formSubmitted = false;
 
-  mailTest = true;
+  mailTest = false;
 
   emailSent = false;
 
@@ -70,7 +70,7 @@ export class ReadyToWorkComponent {
     this.emailSent = true;
     setTimeout(() => {
       this.emailSent = false;
-    }, 3000); 
+    }, 4000); 
   }
 
   private resetFormData(ngForm: NgForm) {
