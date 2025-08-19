@@ -18,7 +18,7 @@ export const templateLayout: TemplateItem[] = [
         details: 'TRANSLATE.P_VIEW_JOIN_DETAILS',
         weeks: '8',
         githubUrl: 'https://github.com/davorjezernik/Join',
-        liveUrl: 'https://github.com/davorjezernik'
+        liveUrl: 'http://davorjezernik.com/projects/Join/'
     },
     {
         id: 'pollo',
@@ -27,6 +27,6 @@ export const templateLayout: TemplateItem[] = [
         details: 'TRANSLATE.P_VIEW_POLLO_DETAILS',
         weeks: '5',
         githubUrl: 'https://github.com/davorjezernik/elPolloLoco',
-        liveUrl: 'https://github.com/davorjezernik'
+        liveUrl: 'http://davorjezernik.com/projects/elPolloLoco/'
     },
 ];
