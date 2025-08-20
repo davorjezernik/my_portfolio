@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { traceUntil } from '@angular/fire/performance';
 
 @Component({
   selector: 'app-ready-to-work',
@@ -25,7 +26,7 @@ export class ReadyToWorkComponent {
 
   formSubmitted = false;
 
-  mailTest = false;
+  mailTest = true;
 
   emailSent = false;
 
