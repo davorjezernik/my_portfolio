@@ -7,7 +7,7 @@
         <div class="go-back remove-button">
             <div class="hover-back-container display-flex">
                 <a class="display-flex" href="#projects">
-                    <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
+                    <img class="pointer" src="assets/project_view_img/orange_arrow.png">
                 </a>          
                 <a class="font-size-18 weight-700 black-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
             </div>
@@ -25,7 +25,7 @@
                     <div class="headline-img">
                         <div class="text-wrapper">
                             <h1 class="font-size-64 weight-700">{{ selectedProject?.name }}</h1>
-                            <img src="assets/about_me_img/blue_line.svg">
+                            <img src="assets/about_me_img/blue_line.png">
                         </div>
                     </div>
                     <div class="set-width">
@@ -65,7 +65,7 @@
 
             <div class="container-two flex-justyfy-align column ">
                 
-                <img class="img-project" src="assets/project_view_img/{{ selectedProject?.id }}.svg">
+                <img class="img-project" src="assets/project_view_img/{{ selectedProject?.id }}.png">
                     
                 <div class="button-container-img display-flex" *ngIf="selectedProject as project">
 
@@ -93,7 +93,7 @@
         <div class="button-container display-flex">
             <div class="button-back none">
                 <a class="display-flex" href="#projects">
-                    <img class="pointer" src="assets/project_view_img/orange_arrow.svg">
+                    <img class="pointer" src="assets/project_view_img/orange_arrow.png">
                 </a>          
                 <a class="font-size-18 weight-700 white-font pointer back-hover" href="#projects">{{ 'TRANSLATE.P_VIEW_BACK' | translate }}</a>
             </div>
@@ -101,7 +101,7 @@
                 <div class="hover-next-container display-flex">
                     <a class="font-size-18 weight-700 white-font pointer next-hover" (click)="goToNextProject()">{{ 'TRANSLATE.P_VIEW_NEXT' | translate }}</a>
                     <a class="display-flex" (click)="goToNextProject()">
-                        <img class="pointer" src="assets/project_view_img/yellow_arrow.svg">
+                        <img class="pointer" src="assets/project_view_img/yellow_arrow.png">
                     </a>
                 </div>
             </div>

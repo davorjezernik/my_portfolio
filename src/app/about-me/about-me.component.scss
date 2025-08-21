@@ -23,7 +23,7 @@ section {
 
 .yellow-paper {
     top: 0;
-    background-image: url('./../../../public/assets/about_me_img/paper_yellow.svg');
+    background-image: url('./../../../public/assets/about_me_img/paper_yellow.png');
     z-index: 2;
     transform: rotate(4deg);
     height: 152px;
@@ -36,14 +36,14 @@ section {
 
 .blue-paper {
     top: 100px;
-    background-image: url('./../../../public/assets/about_me_img/paper_blue.svg');
+    background-image: url('./../../../public/assets/about_me_img/paper_blue.png');
     z-index: 1;
     height: 152px;
 }
 
 .orange-paper {
     top: 190px;
-    background-image: url('./../../../public/assets/about_me_img/paper_orange.svg');
+    background-image: url('./../../../public/assets/about_me_img/paper_orange.png');
     z-index: 0;
     transform: rotate(-4deg);
     height: 168px;

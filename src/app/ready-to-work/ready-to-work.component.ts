@@ -26,7 +26,7 @@ export class ReadyToWorkComponent {
 
   formSubmitted = false;
 
-  mailTest = true;
+  mailTest = false;
 
   emailSent = false;
 
