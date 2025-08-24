@@ -10,8 +10,8 @@
         "HEAD_CONTACT": "Get in Touch",
 
         "ABOUT_BASED":"Based in Graz",
-        "ABOUT_RELOCATE":"Open to relocate",
-        "ABOUT_REMOTE":"Open to work remote",
+        "ABOUT_RELOCATE":"Open to relocation",
+        "ABOUT_REMOTE":"Open to remote work",
         "ABOUT_WHO":"WHO'S DAVOR?",
         "ABOUT_HEAD":"About Me",
         "ABOUT_TEXT":"Hey, I'm Davor. I've always been into tech and software development because I find it exciting how fast everything is evolving. The possibilities we have today and what's coming in the future really inspire me. I enjoy thinking up new ideas and turning them into something real that can actually help people. My goal is to build something meaningful that makes a difference in someone's life, no matter how big or small. Coding keeps me curious and driven. There's always something new to learn, a new challenge to figure out, and that's what keeps it fun for me.",
@@ -41,8 +41,8 @@
         "WORK_READY": "Ready to work together?",
         "WORK_TEXT": "Encourage people to contact you and describe what role you are interested in. Express confidence in your ability to make a meaningful contribution to a team through your expertise and enthusiasm for improving your skills. Show interest in contributing to a new project, while highlighting the value and skills you can bring to the table",
         "WORK_NAME": "What's your name?",
-        "WORK_EMAIL": "Whats your email?",
-        "WORK_HELP": "How can i help you?",
+        "WORK_EMAIL": "What's your email?",
+        "WORK_HELP": "How can I help you",
         "WORK_PLACEHOLDER1": "Your name goes here",
         "WORK_PLACEHOLDER2": "youremain@email.com",
         "WORK_PLACEHOLDER3": "Hello Davor, I am interested in...",
@@ -51,9 +51,9 @@
         "WORK_ACCEPT3": "and agree to the processing of my data as outlined.",
         "WORK_SEND": "Send",
 
-        "WORK_P_NAME" : "-Pleas enter a Name",
+        "WORK_P_NAME" : "-Please enter a Name",
         "WORK_P_EMAIL" : "-Pleas enter a E-mail",
-        "WORK_P_MASSAGE" : "-Pleas enter a message",
+        "WORK_P_MASSAGE" : "-Pleas enter a Message",
         "WORK_W_MASSAGE" : "-Please fill out all required fields and accept privacy policy.",
         "WORK_MAIL_SENT" : "E-mail sent",
 
@@ -68,7 +68,7 @@
 
         "LN_AOT": "Legal Notice",
         "LN_NAME": "Name",
-        "LN_ADRESS": "Adress",
+        "LN_ADRESS": "Address",
         "LN_EMAIL": "E-Mail",
         "LN_PHONE": "Phone",
         "LN_CN": "Copyright Notice",

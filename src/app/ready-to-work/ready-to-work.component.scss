@@ -285,3 +285,26 @@ section {
     }
 }
 
+
+:host ::ng-deep input:-webkit-autofill,
+:host ::ng-deep input:-webkit-autofill:hover,
+:host ::ng-deep input:-webkit-autofill:focus,
+:host ::ng-deep textarea:-webkit-autofill,
+:host ::ng-deep textarea:-webkit-autofill:hover,
+:host ::ng-deep textarea:-webkit-autofill:focus,
+:host ::ng-deep select:-webkit-autofill,
+:host ::ng-deep select:-webkit-autofill:hover,
+:host ::ng-deep select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset; 
+  -webkit-text-fill-color: rgb(248, 249, 250); 
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Firefox */
+:host ::ng-deep input:autofill,
+:host ::ng-deep textarea:autofill,
+:host ::ng-deep select:autofill {
+  background-color: transparent !important;
+  color: rgb(248, 249, 250) !important;
+}
+

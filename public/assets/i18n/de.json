@@ -5,7 +5,7 @@
         "NAV_PROJECTS": "Projekte",
         "NAV_CONTACT": "Kontakt",
 
-        "HEAD_HELLO": "Hallo welt",
+        "HEAD_HELLO": "Hallo Welt",
         "HEAD_NAME": "ICH BIN DAVOR JEZERNIK",
         "HEAD_CONTACT": "Lass uns reden",
 
@@ -20,7 +20,7 @@
         "SKILL_STACK": "MEIN TECH-STACK",
         "SKILL_AOT": "Fähigkeiten",
         "SKILL_PULL": "Ziehen, um freizulegen",
-        "SKILL_OPEN": "Außerdem interessiere ich mich dafür, tiefer einzutauchen in:",
+        "SKILL_OPEN": "Außerdem interessiere ich mich dafür, tiefer einzutauchen in …",
 
         "PROJECTS_CRAFT": "MEIN HANDWERK",
         "PROJECTS_AOT": "Projekte",
@@ -71,7 +71,7 @@
         "LN_EMAIL": "E-Mail",
         "LN_PHONE": "Telefon",
         "LN_CN": "Urheberrechtshinweis",
-        "LN_CN_TEXT": "© 2025 Davor Jezernik. Alle Rechte vorbehalten.Alle Inhalte dieser Website, einschließlich, aber nicht beschränkt auf Texte, Bilder, Grafiken, Code und Design, sind Eigentum von Davor Jezernik und durch internationale Urheberrechtsgesetze geschützt. Kein Teil dieser Website darf ohne vorherige schriftliche Genehmigung des Rechteinhabers vervielfältigt, verbreitet oder in irgendeiner Form oder mit irgendwelchen Mitteln übertragen werden.",
+        "LN_CN_TEXT": "© 2025 Davor Jezernik. Alle Rechte vorbehalten. Alle Inhalte dieser Website, einschließlich, aber nicht beschränkt auf Texte, Bilder, Grafiken, Code und Design, sind Eigentum von Davor Jezernik und durch internationale Urheberrechtsgesetze geschützt. Kein Teil dieser Website darf ohne vorherige schriftliche Genehmigung des Rechteinhabers vervielfältigt, verbreitet oder in irgendeiner Form oder mit irgendwelchen Mitteln übertragen werden.",
         "LN_DOF": "Haftungsausschluss",
         "LN_DOF_TEXT": "Diese Website enthält Links zu externen Websites Dritter. Auf deren Inhalte habe ich keinen Einfluss und übernehme daher keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Trotz sorgfältiger Prüfung übernehme ich keine Haftung für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen. Die Nutzung der Inhalte dieser Website erfolgt auf eigene Gefahr.",
         "LN_UOF": "Nutzung der Inhalte",
@@ -91,7 +91,7 @@
         "PP_TWO": "2. Welche personenbezogenen Daten wir erfassen",
         "PP_TEXT_TWO": "Wenn Sie das Kontaktformular auf dieser Website nutzen, werden folgende personenbezogene Daten erfasst:",
         "PP_NAME": "Vor- und Nachname oder Firmenname",
-        "PP_EMAIL_USER": "E-mail adresse",
+        "PP_EMAIL_USER": "E-Mail-Adresse",
         "PP_INFO": "Diese Informationen werden ausschließlich verwendet, um auf Ihre Anfrage zu antworten.",
         "PP_THREE": "3. Rechtsgrundlage (DSGVO Art. 6)",
         "PP_TEXT_THREE": "Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), wenn Sie das Kontaktformular absenden.",
