@@ -14,6 +14,28 @@ section {
     top: 0px;
 }
 
+.loadingScreen {
+  position: fixed; 
+  inset: 0;
+  background: rgb(27,27,27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(51, 85, 255);
+  z-index: 9999;
+}
+
+.loader {
+  border: 6px solid #333;
+  border-top: 6px solid rgb(51, 85, 255);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
 .container-one {
     background-image: url('./../../../../public/assets/headline_img/background.webp');
     height: 100%;

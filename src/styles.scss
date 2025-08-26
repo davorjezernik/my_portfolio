@@ -1,6 +1,32 @@
 * {
   scroll-behavior: smooth;
+  img {
+    object-fit: contain;
+  }
 }
+
+html {
+  scrollbar-width: thin; 
+  scrollbar-color: rgb(22,97,252) rgb(27,27,27);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(27,27,27); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(208,167,24); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(208,167,24,0.8); 
+}
+
 
 /* You can add global styles to this file, and also import other style files */
 /* poppins-100 - latin */

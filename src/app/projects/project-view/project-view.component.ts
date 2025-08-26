@@ -19,6 +19,15 @@ export class ProjectViewComponent implements OnChanges {
   projectsIds: string[] = [];
   skills: { icon: string; label: string }[] = [];
 
+  loading = true;
+
+  ngOnInit() {
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      this.loading = false;
+      document.body.style.overflow = 'auto';
+    }, 2000); 
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (
