@@ -31,7 +31,7 @@ nav {
   
 .line-container {
   position: absolute;
-  top: 20px;
+  top: 0px;
   clip-path: inset(0 100% 0 0); 
   transition: clip-path 125ms ease;
   pointer-events: none;
@@ -46,7 +46,7 @@ nav {
 
 .line-container-two {
   position: absolute;
-  top: 22px;
+  top: 8px;
   clip-path: inset(0 100% 0 0);
   transition: clip-path 125ms ease;
   pointer-events: none;

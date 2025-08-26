@@ -53,6 +53,11 @@ section {
   margin-bottom: 10px;
 }
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 :host ::ng-deep .legal-privacy {
     width: 100% !important; 
     height: 80px !important;

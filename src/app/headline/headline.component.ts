@@ -19,5 +19,4 @@ export class HeadlineComponent {
       document.body.style.overflow = 'auto';
     }, 2000); 
   }
-
 }
