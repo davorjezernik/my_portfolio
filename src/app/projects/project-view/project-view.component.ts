@@ -37,7 +37,6 @@ export class ProjectViewComponent implements OnChanges {
     ) {
       this.selectedProject = this.project.find(project => project.id === this.templateID);
       this.projectsIds = this.project.map(p => p.id);
-      console.log('ID', this.templateID);
       this.skills = this.renderSkills(); 
     }
   }

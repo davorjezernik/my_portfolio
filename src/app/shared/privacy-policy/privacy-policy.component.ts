@@ -6,7 +6,7 @@ import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-privacy-policy',
-  imports: [NavbarComponent, TranslateModule, FooterComponent, NgIf],
+  imports: [NavbarComponent, TranslateModule, FooterComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })

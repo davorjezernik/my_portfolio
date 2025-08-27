@@ -3,7 +3,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    height: 110vh;
+    height: 1080px;
     width: 100%;
     transform: rotate(180deg);
     font-family: 'Poppins';
@@ -180,6 +180,8 @@ section {
     right: 0px;
     transform: rotate(180deg);
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .form-warning-container {
@@ -242,6 +244,13 @@ section {
     }
 }
 
+@media screen and (max-width: 1201px) {
+    .footer-container {
+        display: block;
+        justify-content: normal;
+    }
+}
+
 @media screen and (max-width: 801px) {
     section {
         height: 1920px;
@@ -260,7 +269,7 @@ section {
         margin-top: 32px;
     }
     .checkbox {
-        width: 20px;
+        width: 32px;
         height: 16px;
     }
     .none {

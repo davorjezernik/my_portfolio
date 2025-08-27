@@ -34,8 +34,6 @@ export class ReadyToWorkComponent {
     this.formSubmitted = true;
     if (form.valid) {
       this.onSubmit(form);
-    } else {
-      console.warn('Form is invalid');
     }
   }
 

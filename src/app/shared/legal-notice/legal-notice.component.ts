@@ -6,7 +6,7 @@ import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-legal-notice',
-  imports: [NavbarComponent, TranslateModule, FooterComponent, NgIf],
+  imports: [NavbarComponent, TranslateModule, FooterComponent],
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
 })

@@ -1,7 +1,7 @@
 nav {
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 1200px;
   height: 80px;
   a {
     text-decoration: none;
@@ -232,6 +232,12 @@ nav {
     width: 24px;
     border-radius: 100%;
     padding: 2px;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  nav {
+    width: 100%;
   }
 }
 

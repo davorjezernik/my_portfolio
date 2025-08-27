@@ -82,8 +82,8 @@
                     <img class="img2" src="assets/skill_set_img/mid.webp" [ngClass]="{ show: showImg2 && !hideImg2, hide: hideImg2 }"/>
                     <div (click)="startPeelOff()">
                         <img class="img1" src="assets/skill_set_img/default.webp" [class.hide]="hideImg1"/>
-                        <div class="img1-text flex-justyfy-align" [class.hide]="hideImg1Text">
-                            <div class="layer-one flex-justyfy-align">
+                        <div class="img1-text flex-justyfy-align pointer" [class.hide]="hideImg1Text">
+                            <div class="layer-one flex-justyfy-align pointer">
                                 <img class="arrow-img" src="assets/skill_set_img/white_arrow.webp" />
                                 <p class="font-size-24 weight-400">{{ 'TRANSLATE.SKILL_PULL' | translate }}</p>
                             </div>
