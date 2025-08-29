@@ -249,8 +249,9 @@ section {
         background-image: none;
     }
     .container-one-inner {
-        margin-top: 256px;
         width: 90%;
+        display: flex;
+        justify-content: center;
     }
     .remove-button {
         display: none;
@@ -259,13 +260,16 @@ section {
         flex-direction: column;
         height: 100%;
     }
-    .container-one {
+    .main-container {
         background-image: url("./../../../../public/assets/projects_img/phonebg.webp");
         background-position: 40% 60%;
         height: 100%;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .container-one {
+        width: 100%;
     }
     .container-two {
         height: 100%;
@@ -308,9 +312,6 @@ section {
     :host ::ng-deep app-navbar nav {
         margin-top: 0px;
     }
-    .container-one {
-        background-position: 40% 55%;
-    }
 }
 
 @media screen and (max-width: 601px) {
@@ -318,8 +319,7 @@ section {
         height: 1440px;
     }
     .container-one-inner {
-        height: 800px;
-        margin-top: 128px;
+        height: 720px;
     }
 }
 
@@ -329,11 +329,5 @@ section {
     }
     .set-width {
         width: 300px;
-    }
-    .container-one {
-        background-position: 40% 0%;
-    }
-    .container-one-inner {
-        margin-top: 72px;
     }
 }

@@ -8,7 +8,7 @@ section {
 
 .main-container {
     height: 100%;
-    width: 90%;
+    width: 1200px;
 }
 
 .container-one {
@@ -170,6 +170,12 @@ section {
     }
     section {
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    .main-container {
+        width: 90%;
     }
 }
 
