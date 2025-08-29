@@ -38,7 +38,7 @@ export class ReadyToWorkComponent {
   }
 
   post = {
-    endPoint: 'http://davorjezernik.com/sendMail.php',
+    endPoint: 'https://davorjezernik.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

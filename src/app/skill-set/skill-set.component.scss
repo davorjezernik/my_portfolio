@@ -73,15 +73,19 @@ section {
   aspect-ratio: 260 / 80;
   background: url('./../../../public/assets/skill_set_img/orange_circle.webp') no-repeat;
   background-size: cover;
-  animation: slideLeftRight 4s ease-in-out infinite;
   pointer-events: none;
   z-index: 0;
+  opacity: 0; 
+}
+
+.bg-animation.animate {
+  animation: slideLeftRight 4s ease-in-out forwards;
 }
 
 @keyframes slideLeftRight {
-  0% { transform: translateX(-100%); opacity: 0; }
+  0%   { transform: translateX(-100%); opacity: 0; }
   25%, 50% { transform: translateX(0%); opacity: 1; }
-  75%, 100% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0%); opacity: 1; } 
 }
 
 .container-two {

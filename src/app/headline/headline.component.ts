@@ -10,13 +10,20 @@ import { NgIf } from '@angular/common';
   styleUrl: './headline.component.scss'
 })
 export class HeadlineComponent {
-  loading = true;
+  loading = false;
 
-  ngOnInit() {
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      this.loading = false;
-      document.body.style.overflow = 'auto';
-    }, 2000); 
+ ngOnInit() {
+    const hasVisited = sessionStorage.getItem('hasVisited');
+
+    if (!hasVisited) {
+      this.loading = true;
+      document.body.style.overflow = 'hidden';
+
+      setTimeout(() => {
+        this.loading = false;
+        document.body.style.overflow = 'auto';
+        sessionStorage.setItem('hasVisited', 'true'); 
+      }, 2000);
+    }
   }
 }

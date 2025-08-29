@@ -177,8 +177,11 @@ section {
     .card-one,
     .card-two,
     .card-three {
-       width: 300px;
-       border-radius: 10%;
+        width: 288px;
+        height: 100%;
+        border-radius: 10%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
     .img-hover {
         height: 100%;

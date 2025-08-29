@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgClass } from '@angular/common';
+import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-skill-set',
@@ -14,6 +15,21 @@ export class SkillSetComponent {
   hideImg2 = false;
   hideImg1 = false;
   hideImg1Text = false;
+
+  @ViewChild('bgAnim', { static: true }) bgAnim!: ElementRef<HTMLDivElement>;
+
+  ngAfterViewInit(): void {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.bgAnim.nativeElement.classList.add('animate');
+          observer.unobserve(this.bgAnim.nativeElement); 
+        }
+      });
+    }, { threshold: 0.5 }); 
+
+    observer.observe(this.bgAnim.nativeElement);
+  }
 
   startPeelOff() {
     if (this.showImg2 || this.hideImg1) return;
