@@ -272,7 +272,7 @@ section {
 
 @media screen and (max-width: 801px) {
     section {
-        height: 1600px;
+        height: 1200px;
     }
     .content-container {
         flex-direction: column;
@@ -280,10 +280,13 @@ section {
     .container-one,
     .container-two {
         width: 100%;
-        height: 600px;
         align-items: flex-start;
     }
+    .container-one {
+        height: 320px;
+    }
     .container-two {
+        height: 440px;
         align-items: baseline;
         margin-top: 32px;
     }
@@ -312,6 +315,18 @@ section {
     }
     .email-popup {
         bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    section {
+        height: 1440px;
+    }
+    .container-one {
+        height: 520px;
+    }
+    .container-two {
+        height: 600px;
     }
 }
 

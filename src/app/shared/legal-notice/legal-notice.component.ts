@@ -16,10 +16,4 @@ export class LegalNoticeComponent {
   ngOnInit(): void {
     window.scrollTo(0, 0); 
   }
-
-  constructor(private router: Router) {}
-
-  scrollToContact() {
-    this.router.navigate(['/'], { fragment: 'contact' });
-  }
 }
