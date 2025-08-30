@@ -3,11 +3,12 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { TemplateItem, templateLayout } from '../../../models/template';
 import { NgFor, NgIf } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-project-view',
   standalone: true,
-  imports: [NavbarComponent ,NgFor, NgIf, TranslateModule],
+  imports: [NavbarComponent ,NgFor, NgIf, TranslateModule, RouterModule],
   templateUrl: './project-view.component.html',
   styleUrl: './project-view.component.scss'
 })
@@ -18,16 +19,6 @@ export class ProjectViewComponent implements OnChanges {
   selectedProject: TemplateItem | undefined;
   projectsIds: string[] = [];
   skills: { icon: string; label: string }[] = [];
-
-  loading = true;
-
-  ngOnInit() {
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      this.loading = false;
-      document.body.style.overflow = 'auto';
-    }, 2000); 
-  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (

@@ -5,11 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { NgForm } from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { traceUntil } from '@angular/fire/performance';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-ready-to-work',
-  imports: [FooterComponent, TranslateModule, FormsModule, NgIf],
+  imports: [FooterComponent, TranslateModule, FormsModule, NgIf, RouterModule],
   templateUrl: './ready-to-work.component.html',
   styleUrl: './ready-to-work.component.scss'
 })
