@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms'; 
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../services/language.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [FormsModule, TranslateModule], 
+  imports: [FormsModule, TranslateModule, RouterModule], 
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })

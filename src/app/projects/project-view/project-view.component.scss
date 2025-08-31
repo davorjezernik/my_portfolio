@@ -1,7 +1,7 @@
 section {
     height: 100vh;
     width: 100%;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(29, 29, 29);    
 }
 
 .navbar-container {
@@ -52,6 +52,7 @@ section {
     height: 100%;
     width: 100%;
     background-size: cover;
+    background-size: 115% 100%; 
     background-repeat: no-repeat;
 }
 
@@ -236,7 +237,7 @@ section {
 
 @media screen and (max-width: 1201px) {
     section {
-        height: 1920px;
+        height: 1400px;
     }
     :host ::ng-deep .project-view-color-two {
         color: rgb(0, 0, 0); 
@@ -248,10 +249,14 @@ section {
     .main-container {
         background-image: none;
     }
+    .container-one {
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
     .container-one-inner {
         width: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
     .remove-button {
         display: none;
@@ -309,6 +314,9 @@ section {
 }
 
 @media screen and (max-width: 801px) {
+    section {
+        height: 1104px;
+    }
     :host ::ng-deep app-navbar nav {
         margin-top: 0px;
     }
@@ -316,18 +324,22 @@ section {
 
 @media screen and (max-width: 601px) {
     section {
-        height: 1440px;
+        height: 1104px;
     }
     .container-one-inner {
-        height: 720px;
+        height: 560px;
+        margin-bottom: 0px;
     }
 }
 
 @media screen and (max-width: 401px) {
-    section {
-        height: 1200px;
-    }
     .set-width {
         width: 300px;
     }
+    .container-one-inner {
+        height: 640px;
+    }
 }
+
+
+
