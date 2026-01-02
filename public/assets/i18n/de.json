@@ -118,6 +118,9 @@
         "P_VIEW_JOIN_DETAILS": "Ich habe beim Nachbauen des Designs geholfen, JS-Code geschrieben und Firebase gelernt.",
 
         "P_VIEW_POLLO_DESC": "Begleite Pepe auf ein actiongeladenes Abenteuer in einem objektorientierten Spiel!",
-        "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen."
+        "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen.",
+
+        "P_VIEW_BUBBLE_DESC": "Da Bubble ist eine Echtzeit-Team-Messaging-Anwendung, die von Slack inspiriert ist und die Kommunikation über Kanäle, Direktnachrichten und Benutzerzusammenarbeit optimiert.",
+        "P_VIEW_BUBBLE_DETAILS": "Mitwirkung an der Entwicklung des grundlegenden SCSS- und HTML-Codes sowie Implementierung der Passwort-zurücksetzen-Funktion mit zusätzlichen benutzerorientierten Features."
     }
 }
