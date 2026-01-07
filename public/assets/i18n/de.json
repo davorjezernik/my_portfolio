@@ -28,7 +28,7 @@
         "PROJECTS_BUTTON": "Projektdetails",
         "PROJECTS_JOIN": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
         "PROJECTS_POLLO": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Tabasco-Sauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
-        "PROJECTS_BUBBLE": "In Arbeit",
+        "PROJECTS_BUBBLE": "DaBubble ist eine Echtzeit-Team-Messaging-Anwendung, die von Slack inspiriert ist.",
 
         "THOUGHTS_WORDS": "IHRE WORTE:",
         "THOUGHTS_AOT": "Gedanken von Kolleg:innen",
@@ -120,7 +120,7 @@
         "P_VIEW_POLLO_DESC": "Begleite Pepe auf ein actiongeladenes Abenteuer in einem objektorientierten Spiel!",
         "P_VIEW_POLLO_DETAILS": "Ich habe das Design aus dem DA verwendet und beim Programmieren geholfen.",
 
-        "P_VIEW_BUBBLE_DESC": "Da Bubble ist eine Echtzeit-Team-Messaging-Anwendung, die von Slack inspiriert ist und die Kommunikation über Kanäle, Direktnachrichten und Benutzerzusammenarbeit optimiert.",
+        "P_VIEW_BUBBLE_DESC": "DaBubble ist eine Echtzeit-Team-Messaging-Anwendung, die von Slack inspiriert ist und die Kommunikation über Kanäle, Direktnachrichten und Benutzerzusammenarbeit optimiert.",
         "P_VIEW_BUBBLE_DETAILS": "Mitwirkung an der Entwicklung des grundlegenden SCSS- und HTML-Codes sowie Implementierung der Passwort-zurücksetzen-Funktion mit zusätzlichen benutzerorientierten Features."
     }
 }

@@ -31,11 +31,11 @@ export const templateLayout: TemplateItem[] = [
     },
         {
         id: 'bubble',
-        name: 'bubble',
-        description: 'TRANSLATE.P_VIEW_POLLO_DESC',
-        details: 'TRANSLATE.P_VIEW_POLLO_DETAILS',
+        name: 'DaBubble',
+        description: 'TRANSLATE.P_VIEW_BUBBLE_DESC',
+        details: 'TRANSLATE.P_VIEW_BUBBLE_DETAILS',
         weeks: '8',
         githubUrl: 'https://github.com/davorjezernik/DaBubble_',
-        liveUrl: 'https://github.com/davorjezernik/DaBubble_'
+        liveUrl: 'https://projects.davorjezernik.com/DaBubble/login'
     },
 ];
